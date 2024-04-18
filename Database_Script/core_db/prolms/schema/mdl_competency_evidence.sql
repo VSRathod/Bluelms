@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_competency_evidence` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `usercompetencyid` bigint(10) NOT NULL,
+  `contextid` bigint(10) NOT NULL,
+  `action` tinyint(2) NOT NULL,
+  `actionuserid` bigint(10) DEFAULT NULL,
+  `descidentifier` varchar(255) NOT NULL DEFAULT '',
+  `desccomponent` varchar(255) NOT NULL DEFAULT '',
+  `desca` longtext DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `grade` bigint(10) DEFAULT NULL,
+  `note` longtext DEFAULT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL,
+  `usermodified` bigint(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_compevid_use_ix` (`usercompetencyid`),
+  KEY `mdl_compevid_con_ix` (`contextid`),
+  KEY `mdl_compevid_act_ix` (`actionuserid`),
+  KEY `mdl_compevid_use2_ix` (`usermodified`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='The evidence linked to a user competency'

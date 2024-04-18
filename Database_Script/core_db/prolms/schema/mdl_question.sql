@@ -1,0 +1,23 @@
+CREATE TABLE `mdl_question` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `parent` bigint(10) NOT NULL DEFAULT 0,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `questiontext` longtext NOT NULL,
+  `questiontextformat` tinyint(2) NOT NULL DEFAULT 0,
+  `generalfeedback` longtext NOT NULL,
+  `generalfeedbackformat` tinyint(2) NOT NULL DEFAULT 0,
+  `defaultmark` decimal(12,7) NOT NULL DEFAULT 1.0000000,
+  `penalty` decimal(12,7) NOT NULL DEFAULT 0.3333333,
+  `qtype` varchar(20) NOT NULL DEFAULT '',
+  `length` bigint(10) NOT NULL DEFAULT 1,
+  `stamp` varchar(255) NOT NULL DEFAULT '',
+  `timecreated` bigint(10) NOT NULL DEFAULT 0,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `createdby` bigint(10) DEFAULT NULL,
+  `modifiedby` bigint(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_ques_qty_ix` (`qtype`),
+  KEY `mdl_ques_par_ix` (`parent`),
+  KEY `mdl_ques_cre_ix` (`createdby`),
+  KEY `mdl_ques_mod_ix` (`modifiedby`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='This table stores the definition of one version of a questio'

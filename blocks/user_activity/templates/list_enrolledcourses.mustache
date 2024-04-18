@@ -1,0 +1,26 @@
+<div class="generaltable">
+	<div>
+		<div>
+			<h4 class="header c0" style="" scope="col">{{#str}}coursefullname,block_
+user_activity
+{{/str}}</h4>
+			<h4 class="header c1 lastcol" style="" scope="col">{{#str}}enrollmentddate,block_
+user_activity
+{{/str}}</h4>
+		</div>
+	</div>
+	<div>
+		{{#course_listing}}
+		<div class="">
+			<td class="cell c0" style=""><a target="_blank" href="{{{course_link}}}">{{{course_name}}}</a></div>
+			<td class="cell c1 lastcol" style="">{{{enrollment_date}}}</td>
+		</div>
+		{{/course_listing}}
+	</div>
+</div>
+
+{{#no_data}}
+<div>
+	<span>{{#str}}no_result,theme_bluelms{{/str}}</span>
+</div>
+{{/no_data}}

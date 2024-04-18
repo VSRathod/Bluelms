@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_h5pactivity_attempts` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `h5pactivityid` bigint(10) NOT NULL,
+  `userid` bigint(20) NOT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL,
+  `attempt` mediumint(6) NOT NULL DEFAULT 1,
+  `rawscore` bigint(10) DEFAULT 0,
+  `maxscore` bigint(10) DEFAULT 0,
+  `scaled` decimal(10,5) NOT NULL DEFAULT 0.00000,
+  `duration` bigint(10) DEFAULT 0,
+  `completion` tinyint(1) DEFAULT NULL,
+  `success` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_h5paatte_h5puseatt_uix` (`h5pactivityid`,`userid`,`attempt`),
+  KEY `mdl_h5paatte_tim_ix` (`timecreated`),
+  KEY `mdl_h5paatte_h5ptim_ix` (`h5pactivityid`,`timecreated`),
+  KEY `mdl_h5paatte_h5puse_ix` (`h5pactivityid`,`userid`),
+  KEY `mdl_h5paatte_h5p_ix` (`h5pactivityid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Users attempts inside H5P activities'

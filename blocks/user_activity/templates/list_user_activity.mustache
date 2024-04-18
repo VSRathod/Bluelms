@@ -1,0 +1,16 @@
+<table class="generaltable">
+	<thead>
+		<tr>
+			<th class="header c0" style="" scope="col">{{#str}}coursefullname,block_user_activity{{/str}}</th>
+			<th class="header c1 lastcol" style="" scope="col">{{#str}}enrollmentddate,block_user_activity{{/str}}</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{#course_listing}}
+		<tr class="">
+			<td class="cell c0" style=""><a target="_blank" href="{{{course_link}}}">{{{course_name}}}</a></td>
+			<td class="cell c1 lastcol" style="">{{{enrollment_date}}}</td>
+		</tr>
+		{{/course_listing}}
+	</tbody>
+</table>

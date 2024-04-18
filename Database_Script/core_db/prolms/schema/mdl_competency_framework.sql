@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_competency_framework` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `shortname` varchar(100) DEFAULT NULL,
+  `contextid` bigint(10) NOT NULL,
+  `idnumber` varchar(100) DEFAULT NULL,
+  `description` longtext DEFAULT NULL,
+  `descriptionformat` smallint(4) NOT NULL DEFAULT 0,
+  `scaleid` bigint(11) DEFAULT NULL,
+  `scaleconfiguration` longtext NOT NULL,
+  `visible` tinyint(2) NOT NULL DEFAULT 1,
+  `taxonomies` varchar(255) NOT NULL DEFAULT '',
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL,
+  `usermodified` bigint(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_compfram_idn_uix` (`idnumber`),
+  KEY `mdl_compfram_con_ix` (`contextid`),
+  KEY `mdl_compfram_sca_ix` (`scaleid`),
+  KEY `mdl_compfram_use_ix` (`usermodified`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='List of competency frameworks.'

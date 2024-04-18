@@ -1,0 +1,46 @@
+<div class="row mb-4 catalogue-search-wrapper">
+    <div class="col mb-3 mb-lg-0">
+        <form class="input-group search-bar mb-0" method="get" id="form-catalogue-search">
+            <input name="search" type="text" class="form-control" placeholder="Search in all courses"
+                aria-label="Search in all courses" aria-describedby="button-catalogue-search" autocomplete="off"
+                value="{{search}}" id="input-catalogue-search">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit" id="button-catalogue-search">
+                    <i class="icon fa fa-search mr-lg-2 mr-0"></i>
+                    <span class="catalogue-search-btn-text">Search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="col d-none">
+        <form class="input-group tag-search-bar mb-0" method="get" id="form-tag-search">
+            <input name="tag" type="text" class="form-control" placeholder="Search for a tag"
+                aria-label="Search for a tag" aria-describedby="button-tag-search" autocomplete="off" value="{{tag}}"
+                id="input-tag-search">
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit" id="button-tag-search">
+                    <i class="icon fa fa-search mr-lg-2 mr-0"></i>
+                    <span class="catalogue-search-btn-text">Search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+    {{#showmorelinks}}
+    <div class="col-auto">
+        <div class="navitem dropdown">
+            <button aria-label="More actions" class="btn btn-secondary dropdown-toggle" id="dropdown-actions"
+                data-toggle="dropdown" aria-haspopup="true" aria-controls="moreactionsmenu" aria-expanded="false">
+                More
+            </button>
+
+            <div id="moreactionsmenu" class="dropdown-menu" aria-labelledby="dropdown-actions" role="menu">
+                {{#morelinks}}
+                <a class="dropdown-item" href="{{url}}" role="menuitem">
+                    {{text}}
+                </a>
+                {{/morelinks}}
+            </div>
+        </div>
+    </div>
+    {{/showmorelinks}}
+</div>

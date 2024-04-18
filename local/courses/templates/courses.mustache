@@ -1,0 +1,210 @@
+<section id="local_courses">
+
+    <div class="row mb-3">
+        <div class="col-lg-8 col-xl-9 mb-3">
+            <div class="card card-body course-hero mb-3">
+                <img src="{{course_image}}" class="course_image" alt="{{coursedetails.fullname}}"></img>
+
+                <div class="mainfloatcourse">
+                {{#coursehourdetails.mandatory}}
+                <span class="helper-badge course-mandatory">Mandatory</span>
+                {{/coursehourdetails.mandatory}}
+
+                {{#editcapability}}                    
+                    <a href="{{editcapability}}"><span class="helper-badge2 course-mandatory2222">Edit</span></a>
+                {{/editcapability}}
+                </div>
+
+                <div class="content">
+                    <h1 class="course-name">{{coursedetails.fullname}}</h1>
+                    <span>{{{courseratings}}} </span>
+                    <div class="hero-meta-wrapper">
+                        <div class="hero-meta">
+                            <div class="hero-meta-data">
+                                <i class="fa fa-users mr-1"></i>
+                                <span><b>{{student_count}}</b> Enrolled Users</span>
+                            </div>
+                            <div class="hero-meta-data">
+                                <i class="fa fa-th-large mr-1"></i>
+                                <span>{{singlecoursecategorydetails.name}}</span>
+                            </div>
+                        </div>
+                        {{{buttontoshow}}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-body course-overview mb-3">
+                <h3 class="title">Course Overview</h3>
+                <div class="summary">{{{coursedetails.summary}}} </div>
+            </div>
+
+            <div class="card card-body mb-3">
+                <h3 class="title">Authors </h3>
+                <div class="course-instructors">
+                    {{#instructor}}
+                    <div class="course-instructor">
+                        <div class="instructor-avatar">
+                            {{{profile_url}}}
+                        </div>
+                        <div class="instructor-details">
+                            <div class="instructor-name">{{firstname}} {{lastname}}</div>
+                            <div class="instructor-meta">{{email}}</div>
+                            <div class="instructor-meta">{{phone}}</div>
+                        </div>
+                    </div>
+                    {{/instructor}}
+                </div>
+            </div>
+
+            <div class="card card-body mb-3">
+                <h3 class="title">Course Content</h3>
+
+                <div class="course-details-wrapper">
+                    {{#sectiondetails}}
+                    <div class="accordion course-details">
+                        <button class="toggle-details-btn collapsed" type="button" data-toggle="collapse"
+                            data-target="#section-{{section_sequence}}-{{sectionid}}" aria-expanded="false"
+                            aria-controls="section-{{section_sequence}}-{{sectionid}}">
+                            <span class="toggle-details-btn-left">
+                                <i class="arrow-icon fa fa-chevron-up" aria-hidden="true"></i>
+                                <span class="btn-title">{{sectionname}}</span>
+                            </span>
+                            <span class="activities-count">
+                                {{totalActivities}}
+                            </span>
+                        </button>
+
+                        <div id="section-{{section_sequence}}-{{sectionid}}" class="collapse">
+                            <div class="course-details-content">
+                                {{#sectiondata}}
+                                <div class="activity-details">
+                                    <div class="activity-name-wrapper">
+                                        <img src="{{module_activity_logo}}" class="activity-icon"
+                                            alt="{{modulename_Name}} icon" height="16" width="16">
+                                        <div class="activity-name">{{modulename_Name}}</div>
+                                    </div>
+                                    <div class="activity-modulename">
+                                        {{modulename}}
+                                    </div>
+                                </div>
+                                {{/sectiondata}}
+                            </div>
+                        </div>
+                    </div>
+                    {{/sectiondetails}}
+                </div>
+            </div>
+
+            <div class="card card-body course-ratings mb-3">
+                <h3 class="title">Ratings & Reviews</h3>
+
+                {{#courseratings.comments}}
+                <div class="course-rating">
+                    <div class="rating-avatar">{{{picurl}}}</div>
+                    <div class="rating-data">
+                        <div class="user-name mt-1">{{firstname}} {{lastname}}</div>
+                        <div class="rating">
+                            {{{rateurl}}}
+                            <span class="date">{{{dateadded}}}</span>
+                        </div>
+                        {{#comment}}
+                        <div class="rating-feedback mt-2">"{{comment}}"</div>
+                        {{/comment}}
+                    </div>
+                </div>
+                {{/courseratings.comments}}
+            </div>
+        </div>
+        <div class="col-lg-4 col-xl-3">
+           <!-- /<div class="card card-body mb-3 table-box">
+                <h3 class="title">Course Features</h3>
+                <div class="meta-data">
+                    <div class="meta-title">Course Duration</div>
+                    {{#coursehourdetails.hours}}
+                    <div class="meta-value">{{coursehourdetails.hours}}</div>
+                    {{/coursehourdetails.hours}}
+
+                    {{^coursehourdetails.hours}}
+                    <div class="meta-value">-</div>
+                    {{/coursehourdetails.hours}}
+                </div>
+                <div class="meta-data">
+                    <div class="meta-title">Program Type</div>
+                    {{#coursehourdetails.programtype}}
+                    <div class="meta-value">{{coursehourdetails.programtype}}</div>
+                    {{/coursehourdetails.programtype}}
+                    {{^coursehourdetails.programtype}}
+                    <div class="meta-value">-</div>
+                    {{/coursehourdetails.programtype}}
+                </div>
+                <div class="meta-data">
+                    <div class="meta-title">SBU</div>
+                    {{#coursehourdetails.sbu}}
+                    <div class="meta-value">{{coursehourdetails.sbu}}</div>
+                    {{/coursehourdetails.sbu}}
+                    {{^coursehourdetails.sbu}}
+                    <div class="meta-value">-</div>
+                    {{/coursehourdetails.sbu}}
+                </div>
+            </div> / -->
+
+            <div class="card card-body mb-3 table-box">
+                <h3 class="title">Course Content</h3>
+                {{#totalcountativitywise}}
+                <div class="meta-data">
+                    <div class="meta-title">
+                        <img src="{{image}}" height="15" width="15" class="mr-1" />
+                        <span>{{name}}</span>
+                    </div>
+                    <div class="meta-value">{{count}}</div>
+                </div>
+                {{/totalcountativitywise}}
+
+
+            </div>
+
+            <div class="card card-body mb-3 course-tags">
+                <h3 class="title">Tags</h3>
+                <ul>
+                    {{#course_tags}}
+                    <li>{{name}}</li>
+                    {{/course_tags}}
+                </ul>
+            </div>
+
+            <div class="card card-body mb-3 course-badges">
+                <h3 class="title">Course Badges</h3>
+                <ul>
+                    {{#coursebadges}}
+                    <li class="course-badge">
+                        <img src="{{urlimage}}" class="img-fluid" height="60" width="60" title="{{name}}" />
+                        <span class="badge-title">{{name}}</span>
+                    </li>
+                    {{/coursebadges}}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="related-courses px-2 pb-2">
+        <h3 class="title">Related Course</h3>
+        <div class="position-relative" style="min-height: 300px;">
+            <button class="btn btn-icon bg-secondary icon-no-margin pagination-btn" id="pagination-button-prev"
+                disabled>
+                <i class="icon fa fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-icon bg-secondary icon-no-margin pagination-btn" id="pagination-button-next"
+                disabled>
+                <i class="icon fa fa-chevron-right"></i>
+            </button>
+            <div class="related-courses-data"></div>
+            <div id="related-courses-loader">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

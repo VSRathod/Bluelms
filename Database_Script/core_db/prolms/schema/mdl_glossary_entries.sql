@@ -1,0 +1,22 @@
+CREATE TABLE `mdl_glossary_entries` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `glossaryid` bigint(10) NOT NULL DEFAULT 0,
+  `userid` bigint(10) NOT NULL DEFAULT 0,
+  `concept` varchar(255) NOT NULL DEFAULT '',
+  `definition` longtext NOT NULL,
+  `definitionformat` tinyint(2) NOT NULL DEFAULT 0,
+  `definitiontrust` tinyint(2) NOT NULL DEFAULT 0,
+  `attachment` varchar(100) NOT NULL DEFAULT '',
+  `timecreated` bigint(10) NOT NULL DEFAULT 0,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `teacherentry` tinyint(2) NOT NULL DEFAULT 0,
+  `sourceglossaryid` bigint(10) NOT NULL DEFAULT 0,
+  `usedynalink` tinyint(2) NOT NULL DEFAULT 1,
+  `casesensitive` tinyint(2) NOT NULL DEFAULT 0,
+  `fullmatch` tinyint(2) NOT NULL DEFAULT 1,
+  `approved` tinyint(2) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`id`),
+  KEY `mdl_glosentr_use_ix` (`userid`),
+  KEY `mdl_glosentr_con_ix` (`concept`),
+  KEY `mdl_glosentr_glo_ix` (`glossaryid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='all glossary entries'

@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_scale_history` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `action` bigint(10) NOT NULL DEFAULT 0,
+  `oldid` bigint(10) NOT NULL,
+  `source` varchar(255) DEFAULT NULL,
+  `timemodified` bigint(10) DEFAULT NULL,
+  `loggeduser` bigint(10) DEFAULT NULL,
+  `courseid` bigint(10) NOT NULL DEFAULT 0,
+  `userid` bigint(10) NOT NULL DEFAULT 0,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `scale` longtext NOT NULL,
+  `description` longtext NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_scalhist_act_ix` (`action`),
+  KEY `mdl_scalhist_tim_ix` (`timemodified`),
+  KEY `mdl_scalhist_old_ix` (`oldid`),
+  KEY `mdl_scalhist_cou_ix` (`courseid`),
+  KEY `mdl_scalhist_log_ix` (`loggeduser`),
+  KEY `mdl_scalhist_use_ix` (`userid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='History table'

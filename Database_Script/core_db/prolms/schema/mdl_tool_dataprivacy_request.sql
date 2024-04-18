@@ -1,0 +1,22 @@
+CREATE TABLE `mdl_tool_dataprivacy_request` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `type` bigint(10) NOT NULL DEFAULT 0,
+  `comments` longtext DEFAULT NULL,
+  `commentsformat` tinyint(2) NOT NULL DEFAULT 0,
+  `userid` bigint(10) NOT NULL DEFAULT 0,
+  `requestedby` bigint(10) NOT NULL DEFAULT 0,
+  `status` tinyint(2) NOT NULL DEFAULT 0,
+  `dpo` bigint(10) DEFAULT 0,
+  `dpocomment` longtext DEFAULT NULL,
+  `dpocommentformat` tinyint(2) NOT NULL DEFAULT 0,
+  `systemapproved` smallint(4) NOT NULL DEFAULT 0,
+  `usermodified` bigint(10) NOT NULL DEFAULT 0,
+  `timecreated` bigint(10) NOT NULL DEFAULT 0,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `creationmethod` bigint(10) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_tooldatarequ_use_ix` (`userid`),
+  KEY `mdl_tooldatarequ_req_ix` (`requestedby`),
+  KEY `mdl_tooldatarequ_dpo_ix` (`dpo`),
+  KEY `mdl_tooldatarequ_use2_ix` (`usermodified`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Table for data requests'

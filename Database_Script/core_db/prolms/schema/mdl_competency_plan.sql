@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_competency_plan` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL DEFAULT '',
+  `description` longtext DEFAULT NULL,
+  `descriptionformat` smallint(4) NOT NULL DEFAULT 0,
+  `userid` bigint(10) NOT NULL,
+  `templateid` bigint(10) DEFAULT NULL,
+  `origtemplateid` bigint(10) DEFAULT NULL,
+  `status` tinyint(1) NOT NULL,
+  `duedate` bigint(10) DEFAULT 0,
+  `reviewerid` bigint(10) DEFAULT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `usermodified` bigint(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_compplan_usesta_ix` (`userid`,`status`),
+  KEY `mdl_compplan_tem_ix` (`templateid`),
+  KEY `mdl_compplan_stadue_ix` (`status`,`duedate`),
+  KEY `mdl_compplan_use_ix` (`usermodified`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Learning plans'

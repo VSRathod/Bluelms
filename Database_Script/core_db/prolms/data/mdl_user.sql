@@ -1,0 +1,2 @@
+1	manual	1	0	0	0	1	guest	$2y$10$El52fuk0T4GjP7bNLbkS2eiz./vX/qiKpgFKnfrvLJfxESj2ZnUPi		Guest user	 	root@localhost	0								en	gregorian		99	0	0	0	0			0	This user is a special user that allows read-only access to some courses.	1	1	0	2	1	0	0	1708674656	0	\N	\N	\N	\N	\N	\N
+2	manual	1	0	0	0	1	admin	$2y$10$g7cPZ1oASi2k2fEFNnvzC.ZDnZ64BH3n.S7xL7bJ94Xy51MvMXUty		Admin	User	rathodvr2001@gmail.com	0						Nanded	IN	en	gregorian		Asia/Kolkata	1708675099	1708684980	1708677608	1708678894	0:0:0:0:0:0:0:1		0		1	1	0	1	1	0	0	1708675152	0	\N					\N

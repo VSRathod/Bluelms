@@ -1,0 +1,170 @@
+{{!
+This file is part of Moodle - https://moodle.org/
+Moodle is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+Moodle is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+@template common/lib
+Common parts of the lib.php file.
+Context variables required for this template:
+* component
+* copyright
+Example context (json):
+{
+    
+}
+}}
+
+        <div id="plms-my-progress-container ">
+        
+                  
+            <div class="row d-flex justify-content-evenly text-center">
+                
+                <div class="col bg-primary text-white p-3 m-1 rounded"><a href="{{{list_completed_url}}}" class="text-center small_circle" style="background-color:{{{brandcolor}}};"></a><br><p class="text-center" >{{#str}}completed,block_user_activity{{/str}}</p><h4 class="mt-n2" style="color:{{{brandcolor}}} !important;">{{{ccompleted}}}</h4></div>
+                <div class="col bg-success text-white p-3 m-1 rounded"><a href="{{{list_notstarted_url}}}" class="text-center small_circle" style="background-color:{{{second_color}}};"></a><br><p class="text-center ">{{#str}}notyetstarted,block_user_activity{{/str}}</p><h4 class="mt-n2" style="color:{{{second_color}}} !important;">{{{cnoyetstarted}}}</h4></div>
+                <div class="col  bg-warning text-white p-3 m-1 rounded"><a href="{{{list_inprogress}}}" class="text-center small_circle" style="background-color:{{{third_color}}};"></a><br><p class="text-center">{{#str}}inprogress,block_user_activity{{/str}}</p><h4 class="mt-n2" style="color:{{{third_color}}} !important;">{{{cinprogress}}}</h4></div>
+                
+            </div>
+
+        </div>
+        
+
+{{#js}}
+require(['jquery', 'core/ajax', 'core/notification', 'core/str'], function($, ajax, notification, str) {
+$(function () {
+
+            $.getScript('{{{highchart_url}}}', function(){
+
+            var colors = Highcharts.getOptions().colors,
+            categories = ['', '', ''],
+            data = [{
+                    y: {{{per1}}},
+                    url: '{{{list_completed_url}}}',
+                    color: '{{{brandcolor}}}',
+                    drilldown: {
+                        name: 'Completed',
+                        categories: ['Completed{{{ccompleted}}}'],
+                        data: [{{{per1}}}],
+                        color: '{{{brandcolor}}}'
+                    }
+                    }, {
+                    y: {{{per2}}},
+                    url: '{{{list_notstarted_url}}}',
+                    color: '{{{second_color}}}',
+                    drilldown: {
+                        name: 'not started',
+                        categories: ['Not Started{{{cnoyetstarted}}}'],
+                        data: [{{{per2}}}],
+                        color: '{{{second_color}}}'
+                    }
+                    }, {
+                    y: {{{per2}}},
+                    url: '{{{list_inprogress}}}',
+                    color: '{{{third_color}}}',
+                    drilldown: {
+                        name: 'In progress',
+                        categories: ['Inprogress{{{cinprogress}}}'],
+                        data: [{{{per3}}}],
+                        color: '{{{third_color}}}'
+                    }
+                    }
+            ],
+            browserData = [],
+            versionsData = [],
+            i,
+            j,
+            dataLen = data.length,
+            drillDataLen,
+            brightness;
+
+
+        // Build the data arrays
+        for (i = 0; i < dataLen; i += 1) {
+
+            // add browser data
+            browserData.push({
+                name: categories[i],
+                y: data[i].y,
+                color: data[i].color
+            });
+
+            // add version data
+            drillDataLen = data[i].drilldown.data.length;
+            for (j = 0; j < drillDataLen; j += 1) {
+                brightness =  (j / drillDataLen) / 5;
+                versionsData.push({
+                    name: data[i].drilldown.categories[j],
+                    y: data[i].drilldown.data[j],
+                    color: Highcharts.Color(data[i].color).brighten(brightness).get(),
+                    url: data[i].url
+                });
+            }
+        }
+
+        // Create the chart
+        $('#plms-my-progress-container').highcharts({
+            chart: {
+                height: 250,
+                type: 'pie',
+                backgroundColor: 'transparent'
+
+            },
+            legend: {
+                align: 'right',
+                backgroundColor: '#ff0000',
+                itemDistance: 20,
+                enabled: false
+            },
+            title: {
+                text: ''
+            },
+            yAxis: {
+                title: {
+                    text: ''
+                }
+            },
+            plotOptions: {
+                pie: {
+                    shadow: false,
+                    plotBackgroundColor: 'rgba(255, 0, 0, .9)',
+                    center: ['50%', '50%']
+                }
+            },
+            tooltip: {
+                valueSuffix: '%'
+            },
+            series: [ {
+                name: '{{#str}}progress,block_user_activity{{/str}}',
+                data: versionsData,
+                size: '75%',
+                innerSize: '70%',   
+                dataLabels: {
+                    formatter: function () {
+                        // display only if larger than 1 Dani Otelch comment the last line hide the legends
+                       // return this.y > 1 ? '<b>' + this.point.name + ':</b> ' + this.y + '%'  : null;
+                    }
+                },
+                point:{
+                    events:{
+                        click: function (event) {
+                            location.href = this.url;
+                        }
+                    }
+                },
+                cursor: 'pointer'
+            }]
+        });
+
+    });
+    })
+ })
+{{/js}}
+    

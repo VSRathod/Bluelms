@@ -1,0 +1,130 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+
+    @template theme_bluelms/navbar
+
+    This template renders the top navbar.
+
+    Example context (json):
+    {
+        "output": {
+            "should_display_navbar_logo": true,
+            "get_compact_logo_url": "http://placekitten.com/50/50",
+            "custom_menu": "<li>..</li>",
+            "page_heading_menu": "<li>..</li>",
+            "search_box": "<div><input type='text'></div>",
+            "navbar_plugin_output": "<div class='dropdown'>Messaging</div>",
+            "user_menu": "<div class='dropdown'>John Doe</div>"
+        },
+        "config": {
+            "wwwroot": "#",
+            "homeurl": "/my/"
+        },
+        "sitename": "Moodle Site",
+        "mobileprimarynav": [
+            {
+                "text": "Dashboard",
+                "url": "/my",
+                "isactive": true
+            },
+            {
+                "text": "Site home",
+                "url": "/",
+                "isactive": false
+            },
+            {
+                "text": "My courses",
+                "url": "/course",
+                "isactive": false
+            }
+        ]
+    }
+}}<div class="ellipse">
+    <!-- SVG code here -->
+</div>
+<nav class="protenant-topbar-wrapper moodle-has-zindex" aria-label="{{#str}}sitemenubar, admin{{/str}}" id="topbar">
+    <div class="protenant-topbar wrapper-page protenant-topbar--custom-menu">
+        <div class="d-inline-flex align-items-center" id="topbarLeft">
+            <!-- Button for toggling drawer -->
+            <button id="mainNav" class="protenant-topbar-btn nav-drawer-btn" aria-expanded="true" aria-controls="nav-drawer" type="button" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">
+                <img width="26" height="26" src="https://img.icons8.com/metro/26/menu.png" alt="menu"/>
+                <span class="sr-only">{{#str}}sidepanel, core{{/str}}</span>
+            </button>
+        </div>
+         <!--<a href="{{{ config.homeurl }}}" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
+                    {{# output.should_display_logo }}
+                        <img src="{{output.get_logo}}" class="protenant-custom-logo img-fluid" alt="{{sitename}}">
+                    {{/ output.should_display_logo }}
+                    {{^ output.should_display_logo }}
+                        {{{ sitename }}}
+                    {{/ output.should_display_logo }}
+                </a>-->
+        <div class="protenant-navbar-nav--sep d-inline-flex mx-1">
+            <!-- Language menu -->
+            {{#langmenu}}
+                {{> theme_bluelms/language_menu }}
+                <div class="divider border-left h-75 align-self-center mx-1"></div>
+            {{/langmenu}}
+        </div>
+
+        {{#primarymoremenu}}
+            <!-- Primary navigation menu -->
+            <div class="primary-navigation d-none">
+                {{> core/moremenu}}
+            </div>
+        {{/primarymoremenu}}
+
+        <div class="ml-auto d-flex align-items-right">
+            <!-- Page heading menu -->
+            <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+                {{{ output.page_heading_menu }}}
+            </ul>
+
+            <div id="usernavigation" class="protenant-icon-menu protenant-icon-menu--right protenant-navbar-nav--sep align-items-center">
+                <div class="navbarcallbacks">
+                    {{{ output.get_navbar_callbacks_data }}}
+                </div>
+                <!-- Settings button -->
+                {{{output.settings_btn}}}
+                <!-- Search box -->
+                {{# output.search_box }}
+                    {{{ output.search_box }}}
+                {{/output.search_box}}
+                <!-- Navbar plugin output -->
+                {{{ output.navbar_plugin_output }}}
+                <!-- User menu -->
+                {{#usermenu}}
+                    {{> core/user_menu }}
+                {{/usermenu}}
+                <!-- Edit switch -->
+                {{{ output.edit_switch }}}
+            </div>
+        </div>
+    </div>
+</nav>
+
+{{#secondarymoremenu}}
+    <!-- Secondary navigation menu -->
+    <div class="secondary-navigation d-print-none bluelms">
+        <div class="bluelms-container-fluid">
+            {{> core/moremenu}}
+        </div>
+    </div>
+{{/secondarymoremenu}}
+
+

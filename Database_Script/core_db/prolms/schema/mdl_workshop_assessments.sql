@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_workshop_assessments` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `submissionid` bigint(10) NOT NULL,
+  `reviewerid` bigint(10) NOT NULL,
+  `weight` bigint(10) NOT NULL DEFAULT 1,
+  `timecreated` bigint(10) DEFAULT 0,
+  `timemodified` bigint(10) DEFAULT 0,
+  `grade` decimal(10,5) DEFAULT NULL,
+  `gradinggrade` decimal(10,5) DEFAULT NULL,
+  `gradinggradeover` decimal(10,5) DEFAULT NULL,
+  `gradinggradeoverby` bigint(10) DEFAULT NULL,
+  `feedbackauthor` longtext DEFAULT NULL,
+  `feedbackauthorformat` smallint(3) DEFAULT 0,
+  `feedbackauthorattachment` smallint(3) DEFAULT 0,
+  `feedbackreviewer` longtext DEFAULT NULL,
+  `feedbackreviewerformat` smallint(3) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_workasse_sub_ix` (`submissionid`),
+  KEY `mdl_workasse_gra_ix` (`gradinggradeoverby`),
+  KEY `mdl_workasse_rev_ix` (`reviewerid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Info about the made assessment and automatically calculated '

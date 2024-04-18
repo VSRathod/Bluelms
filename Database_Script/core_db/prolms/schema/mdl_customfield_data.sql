@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_customfield_data` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `fieldid` bigint(10) NOT NULL,
+  `instanceid` bigint(10) NOT NULL,
+  `intvalue` bigint(10) DEFAULT NULL,
+  `decvalue` decimal(10,5) DEFAULT NULL,
+  `shortcharvalue` varchar(255) DEFAULT NULL,
+  `charvalue` varchar(1333) DEFAULT NULL,
+  `value` longtext NOT NULL,
+  `valueformat` bigint(10) NOT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL,
+  `contextid` bigint(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_custdata_insfie_uix` (`instanceid`,`fieldid`),
+  KEY `mdl_custdata_fieint_ix` (`fieldid`,`intvalue`),
+  KEY `mdl_custdata_fiesho_ix` (`fieldid`,`shortcharvalue`),
+  KEY `mdl_custdata_fiedec_ix` (`fieldid`,`decvalue`),
+  KEY `mdl_custdata_fie_ix` (`fieldid`),
+  KEY `mdl_custdata_con_ix` (`contextid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='core_customfield data table'

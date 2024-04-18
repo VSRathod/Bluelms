@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_task_scheduled` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `component` varchar(255) NOT NULL DEFAULT '',
+  `classname` varchar(255) NOT NULL DEFAULT '',
+  `lastruntime` bigint(10) DEFAULT NULL,
+  `nextruntime` bigint(10) DEFAULT NULL,
+  `blocking` tinyint(2) NOT NULL DEFAULT 0,
+  `minute` varchar(200) NOT NULL DEFAULT '',
+  `hour` varchar(70) NOT NULL DEFAULT '',
+  `day` varchar(90) NOT NULL DEFAULT '',
+  `month` varchar(30) NOT NULL DEFAULT '',
+  `dayofweek` varchar(25) NOT NULL DEFAULT '',
+  `faildelay` bigint(10) DEFAULT NULL,
+  `customised` tinyint(2) NOT NULL DEFAULT 0,
+  `disabled` tinyint(1) NOT NULL DEFAULT 0,
+  `timestarted` bigint(10) DEFAULT NULL,
+  `hostname` varchar(255) DEFAULT NULL,
+  `pid` bigint(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_tasksche_cla_uix` (`classname`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='List of scheduled tasks to be run by cron.'

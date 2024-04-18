@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_reportbuilder_report` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `source` varchar(255) NOT NULL DEFAULT '',
+  `type` tinyint(2) NOT NULL DEFAULT 0,
+  `uniquerows` tinyint(1) NOT NULL DEFAULT 0,
+  `conditiondata` longtext DEFAULT NULL,
+  `settingsdata` longtext DEFAULT NULL,
+  `contextid` bigint(10) NOT NULL,
+  `component` varchar(100) NOT NULL DEFAULT '',
+  `area` varchar(100) NOT NULL DEFAULT '',
+  `itemid` bigint(10) NOT NULL DEFAULT 0,
+  `usercreated` bigint(10) NOT NULL DEFAULT 0,
+  `usermodified` bigint(10) NOT NULL DEFAULT 0,
+  `timecreated` bigint(10) NOT NULL DEFAULT 0,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_reporepo_use_ix` (`usercreated`),
+  KEY `mdl_reporepo_use2_ix` (`usermodified`),
+  KEY `mdl_reporepo_con_ix` (`contextid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Table to represent a report'

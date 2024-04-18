@@ -1,0 +1,23 @@
+CREATE TABLE `mdl_search_simpledb_index` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `docid` varchar(255) NOT NULL DEFAULT '',
+  `itemid` bigint(10) NOT NULL,
+  `title` longtext DEFAULT NULL,
+  `content` longtext DEFAULT NULL,
+  `contextid` bigint(10) NOT NULL,
+  `areaid` varchar(255) NOT NULL DEFAULT '',
+  `type` tinyint(1) NOT NULL,
+  `courseid` bigint(10) NOT NULL,
+  `owneruserid` bigint(10) DEFAULT NULL,
+  `modified` bigint(10) NOT NULL,
+  `userid` bigint(10) DEFAULT NULL,
+  `description1` longtext DEFAULT NULL,
+  `description2` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_searsimpinde_doc_uix` (`docid`),
+  KEY `mdl_searsimpinde_owncon_ix` (`owneruserid`,`contextid`),
+  KEY `mdl_searsimpinde_con_ix` (`contextid`),
+  KEY `mdl_searsimpinde_cou_ix` (`courseid`),
+  KEY `mdl_searsimpinde_are_ix` (`areaid`),
+  FULLTEXT KEY `mdl_search_simpledb_index_index` (`title`,`content`,`description1`,`description2`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='search_simpledb table containing the index data.'

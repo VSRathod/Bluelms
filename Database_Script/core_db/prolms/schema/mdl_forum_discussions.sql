@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_forum_discussions` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `course` bigint(10) NOT NULL DEFAULT 0,
+  `forum` bigint(10) NOT NULL DEFAULT 0,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `firstpost` bigint(10) NOT NULL DEFAULT 0,
+  `userid` bigint(10) NOT NULL DEFAULT 0,
+  `groupid` bigint(10) NOT NULL DEFAULT -1,
+  `assessed` tinyint(1) NOT NULL DEFAULT 1,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `usermodified` bigint(10) NOT NULL DEFAULT 0,
+  `timestart` bigint(10) NOT NULL DEFAULT 0,
+  `timeend` bigint(10) NOT NULL DEFAULT 0,
+  `pinned` tinyint(1) NOT NULL DEFAULT 0,
+  `timelocked` bigint(10) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_forudisc_use_ix` (`userid`),
+  KEY `mdl_forudisc_cou_ix` (`course`),
+  KEY `mdl_forudisc_for_ix` (`forum`),
+  KEY `mdl_forudisc_use2_ix` (`usermodified`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Forums are composed of discussions'

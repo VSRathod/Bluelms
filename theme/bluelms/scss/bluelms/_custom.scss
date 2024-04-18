@@ -1,0 +1,198 @@
+body {
+  background-color: $body-bg !important; /* stylelint-disable-line */
+}
+#page.drawers .main-inner,
+#region-main {
+  background-color: transparent !important;
+}
+.moremenu .nav-link.active {
+  border-bottom-color: #fff !important;
+}
+.btn-primary {
+  color: #fff;
+}
+
+#page-wrapper:after,
+#page-wrapper:before {
+  content: "";
+  position: fixed;
+  filter: blur(12.5rem);
+  width: 17.125rem;
+  height: 17.125rem;
+  border-radius: 100%;
+  z-index: -3;
+  opacity: 0.5;
+}
+#page-wrapper:before {
+  background: $brand-primary;
+  top: -8.375rem;
+  right: 35%;
+}
+#page-wrapper .ellipse .green-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+}
+#page-wrapper .ellipse .red-line {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0.3;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+// Style for the first menu
+.customnav {
+  padding: 0px 15px; // Adjust spacing between menus as needed
+}
+// Style for list items within menus
+.navbar-nav li {
+  margin: 0;
+}
+// Style for links within menus
+.navbar-nav a {
+  display: block;
+  padding: 10px; // Adjust padding as needed
+  text-decoration: none;
+  color: #333; // Adjust text color as needed
+  font-size: 16px;
+}
+// Hover effect for links
+.navbar-nav a:hover {
+  background-color: #f0f0f0; // Adjust background color on hover
+  color: #000; // Adjust text color on hover
+}
+.navbar-nav a i {
+  margin-right: 5px; // Adjust spacing between icon and text as needed
+}
+.fas {
+  color: $brand-primary; /* Change to the desired color */
+}
+.fcol {
+  background-image: url([[pix:theme|logimage]]);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 300px 300px;
+}
+
+@media screen and (max-width: 599px) {
+  .fcol {
+    background-image: none;
+  }
+}
+@media (max-width: 576px) {
+  .loginform .col-sm-10 {
+    max-width: 100% !important;
+  }
+}
+
+// Media queries for medium devices
+@media (min-width: 576px) and (max-width: 768px) {
+  .loginform .col-md-8 {
+    flex: 0 0 100% !important;
+    max-width: 50% !important;
+  }
+}
+
+// Media queries for large devices
+@media (min-width: 768px) and (max-width: 992px) {
+  .loginform .col-lg-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+.block_multiblock {
+  .card-title {
+    display: none !important;
+  }
+  .block_slider.card:hover .dlab-media .dlab-icon img {
+    transform: scale(1.3);
+  }
+  .block_slider.card:hover .dlab-media .dlab-img img {
+    filter: grayscale(1);
+  }
+  section.block_slider.card {
+    position: relative;
+    background-image: linear-gradient(
+      to right,
+      $brand-primary 0,
+      $brand-secondary 30%,
+      $brand-primary 100%
+    );
+
+    z-index: 1;
+    margin-bottom: 1.875rem;
+    transition: all 0.5s ease-in-out;
+    border: 0rem solid transparent;
+    height: calc(100% - 200px) !important;
+    :after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-image: url("https://getskills.dexignzone.com/codeigniter/demo/public/assets/images/vector/ellipse.png");
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+  }
+  .block_slider {
+    .card-body {
+      padding: 1.875rem;
+      .dlab-content {
+        width: 70%;
+        padding: 30px;
+        h4 {
+          font-size: 1.75rem;
+          font-weight: 700;
+          color: #fff;
+        }
+        p {
+          font-size: 0.9375rem;
+          font-weight: 400;
+          color: #fff;
+          margin-bottom: 0.5rem;
+        }
+      }
+      .dlab-img {
+        width: 39%;
+        position: absolute;
+        right: 2rem;
+        bottom: 0;
+        text-align: center;
+        img {
+          -webkit-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          transition: all 0.5s;
+        }
+      }
+      .dlab-icon .cal-img {
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+        position: absolute;
+        right: 0.8125rem;
+        transform: translateY(2.3125rem);
+      }
+      .dlab-icon .book-img {
+        position: absolute;
+        top: 0;
+        right: 47%;
+        -webkit-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

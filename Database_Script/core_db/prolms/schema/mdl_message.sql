@@ -1,0 +1,23 @@
+CREATE TABLE `mdl_message` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `useridfrom` bigint(10) NOT NULL DEFAULT 0,
+  `useridto` bigint(10) NOT NULL DEFAULT 0,
+  `subject` longtext DEFAULT NULL,
+  `fullmessage` longtext DEFAULT NULL,
+  `fullmessageformat` smallint(4) DEFAULT 0,
+  `fullmessagehtml` longtext DEFAULT NULL,
+  `smallmessage` longtext DEFAULT NULL,
+  `notification` tinyint(1) DEFAULT 0,
+  `contexturl` longtext DEFAULT NULL,
+  `contexturlname` longtext DEFAULT NULL,
+  `timecreated` bigint(10) NOT NULL DEFAULT 0,
+  `timeuserfromdeleted` bigint(10) NOT NULL DEFAULT 0,
+  `timeusertodeleted` bigint(10) NOT NULL DEFAULT 0,
+  `component` varchar(100) DEFAULT NULL,
+  `eventtype` varchar(100) DEFAULT NULL,
+  `customdata` longtext DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_mess_useusetimtim_ix` (`useridfrom`,`useridto`,`timeuserfromdeleted`,`timeusertodeleted`),
+  KEY `mdl_mess_usetimnot_ix` (`useridfrom`,`timeuserfromdeleted`,`notification`),
+  KEY `mdl_mess_usetimnot2_ix` (`useridto`,`timeusertodeleted`,`notification`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Stores all unread messages'

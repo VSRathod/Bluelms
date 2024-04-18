@@ -1,0 +1,22 @@
+CREATE TABLE `mdl_question_statistics` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `hashcode` varchar(40) NOT NULL DEFAULT '',
+  `timemodified` bigint(10) NOT NULL,
+  `questionid` bigint(10) NOT NULL,
+  `slot` bigint(10) DEFAULT NULL,
+  `subquestion` smallint(4) NOT NULL,
+  `variant` bigint(10) DEFAULT NULL,
+  `s` bigint(10) NOT NULL DEFAULT 0,
+  `effectiveweight` decimal(15,5) DEFAULT NULL,
+  `negcovar` tinyint(2) NOT NULL DEFAULT 0,
+  `discriminationindex` decimal(15,5) DEFAULT NULL,
+  `discriminativeefficiency` decimal(15,5) DEFAULT NULL,
+  `sd` decimal(15,10) DEFAULT NULL,
+  `facility` decimal(15,10) DEFAULT NULL,
+  `subquestions` longtext DEFAULT NULL,
+  `maxmark` decimal(12,7) DEFAULT NULL,
+  `positions` longtext DEFAULT NULL,
+  `randomguessscore` decimal(12,7) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_quesstat_que_ix` (`questionid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Statistics for individual questions used in an activity.'

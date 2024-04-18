@@ -1,0 +1,162 @@
+[33mcommit ebf0e177dce484e641fad6892e4ad435bd0fbb10[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbranding[m[33m, [m[1;31morigin/branding[m[33m)[m
+Author: Vaibhav3525 <vaibhavkauthekar2001@gmail.com>
+Date:   Sat Mar 2 14:12:41 2024 +0530
+
+    plugin changes
+
+:100644 100644 0fc14cb1 9dde3b63 M	lang/en/admin.php
+:000000 100644 00000000 f9301f3a A	local/sandbox/.github/workflows/moodle-plugin-ci.yml
+:000000 100644 00000000 6fd2e022 A	local/sandbox/.github/workflows/moodle-release.yml
+:000000 100644 00000000 12680c2c A	local/sandbox/CHANGES.md
+:000000 100644 00000000 94a9ed02 A	local/sandbox/COPYING.txt
+:000000 100644 00000000 3896e6ed A	local/sandbox/README.md
+:000000 100644 00000000 555451a6 A	local/sandbox/UPGRADE.md
+:000000 100644 00000000 8b8aff36 A	local/sandbox/classes/event/course_restored.php
+:000000 100644 00000000 ed48021c A	local/sandbox/classes/privacy/provider.php
+:000000 100644 00000000 bd9d83a4 A	local/sandbox/classes/restore_controller.php
+:000000 100644 00000000 b5c8e26d A	local/sandbox/classes/task/restore_courses.php
+:000000 100644 00000000 4f7a16f8 A	local/sandbox/db/tasks.php
+:000000 100644 00000000 5831defd A	local/sandbox/db/upgrade.php
+:000000 100644 00000000 ce269f5a A	local/sandbox/lang/en/local_sandbox.php
+:000000 100644 00000000 a68047d8 A	local/sandbox/locallib.php
+:000000 100644 00000000 e974221e A	local/sandbox/settings.php
+:000000 100644 00000000 f59acb2a A	local/sandbox/tests/behat/local_sandbox.feature
+:000000 100644 00000000 d446bea6 A	local/sandbox/tests/fixtures/sandbox-test.mbz
+:000000 100644 00000000 d1161947 A	local/sandbox/version.php
+:100644 100644 4d97fee5 14b20926 M	local/sitesetting/locallib.php
+:000000 100644 00000000 1453d728 A	local/sitesetting/render_template.php
+:000000 100644 00000000 793d292c A	local/sitesetting/templates/admin_setting.mustache
+
+[33mcommit 2599c9e23bc9d3a2f7ba31b18785d2c698603094[m
+Author: Vaibhav3525 <vaibhavkauthekar2001@gmail.com>
+Date:   Tue Feb 27 10:14:45 2024 +0530
+
+    first commit
+
+:100644 100644 e0e83753 a1f4e4ed M	admin/tool/componentlibrary/content/moodle/components/footer.md
+:100644 100644 e66d95ad e9311c16 M	config.php
+:000000 100644 00000000 100cc990 A	local/sitesetting/amd/build/custom.min.js
+:000000 100644 00000000 8920cd55 A	local/sitesetting/amd/src/custom.js
+:000000 100644 00000000 f27a80b6 A	local/sitesetting/customise.php
+:000000 100644 00000000 ade88702 A	local/sitesetting/db/install.xml
+:000000 100644 00000000 34da3e4a A	local/sitesetting/db/services.php
+:000000 100644 00000000 4e91e03f A	local/sitesetting/externallib.php
+:000000 100644 00000000 0f1f39bb A	local/sitesetting/index.php
+:000000 100644 00000000 aa8837ee A	local/sitesetting/lang/en/local_sitesetting.php
+:000000 100644 00000000 4d97fee5 A	local/sitesetting/locallib.php
+:000000 100644 00000000 4736124d A	local/sitesetting/search.php
+:000000 100644 00000000 e090a864 A	local/sitesetting/settings.php
+:000000 100644 00000000 39e9fefd A	local/sitesetting/templates/customise.mustache
+:000000 100644 00000000 105872bc A	local/sitesetting/version.php
+:100644 100644 1e6f36d6 643cd6cd M	theme/bluelms/templates/footer.mustache
+
+[33mcommit 8c69e7d1292a1fc3d8e88de9ec4b3ff366d47b4a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: VSRathod <rathodvikas0104@gmail.com>
+Date:   Sat Feb 24 11:15:57 2024 +0530
+
+    first commit
+
+:100644 100644 28ac3364 e66d95ad M	config.php
+:100644 100644 a93deb07 31eeb329 M	lib/editor/atto/plugins/image/styles.css
+:100644 100644 06df39be 4886b990 M	theme/bluelms/pix/screenshot.png
+
+[33mcommit 438c97c563b66e028fd123d98ab539ec855af65e[m
+Author: VSRathod <rathodvikas0104@gmail.com>
+Date:   Fri Feb 23 20:49:07 2024 +0530
+
+    first commit moodle
+
+:000000 100644 00000000 754c8be4 A	.eslintrc
+:000000 100644 00000000 50de7561 A	.gherkin-lintrc
+:000000 100644 00000000 804bb80f A	.grunt/babel-plugin-add-module-to-define.js
+:000000 100644 00000000 5a560c12 A	.grunt/components.js
+:000000 100644 00000000 3e8344a7 A	.grunt/jsdoc/README.md
+:000000 100644 00000000 29684651 A	.grunt/jsdoc/jsdoc.conf.js
+:000000 100644 00000000 9b37ce8d A	.grunt/tasks/componentlibrary.js
+:000000 100644 00000000 b7408ac8 A	.grunt/tasks/eslint.js
+:000000 100644 00000000 658c7529 A	.grunt/tasks/gherkinlint.js
+:000000 100644 00000000 feb2db43 A	.grunt/tasks/ignorefiles.js
+:000000 100644 00000000 19ece75d A	.grunt/tasks/javascript.js
+:000000 100644 00000000 9e32c2eb A	.grunt/tasks/jsconfig.js
+:000000 100644 00000000 e2f0680d A	.grunt/tasks/jsdoc.js
+:000000 100644 00000000 6365e57e A	.grunt/tasks/sass.js
+:000000 100644 00000000 b364af5a A	.grunt/tasks/shifter.js
+:000000 100644 00000000 202a2924 A	.grunt/tasks/startup.js
+:000000 100644 00000000 92d4e691 A	.grunt/tasks/style.js
+:000000 100644 00000000 0891d423 A	.grunt/tasks/stylelint.js
+:000000 100644 00000000 25c64876 A	.grunt/tasks/watch.js
+:000000 100644 00000000 5e61b7c6 A	.jshintignore
+:000000 100644 00000000 b93ac60b A	.jshintrc
+:000000 100644 00000000 53d838af A	.nvmrc
+:000000 100644 00000000 a394425d A	.shifter.json
+:000000 100644 00000000 ae818b0b A	.stylelintrc
+:000000 100644 00000000 ee38dddb A	.travis.yml
+:000000 100644 00000000 c94b3703 A	CONTRIBUTING.txt
+:000000 100644 00000000 94a9ed02 A	COPYING.txt
+:000000 100644 00000000 9de28c7e A	Database_Script/core_db/prolms/data/mdl_adminpresets.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_adminpresets_app.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_adminpresets_app_it.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_adminpresets_app_it_a.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_adminpresets_app_plug.sql
+:000000 100644 00000000 e2f2a6c6 A	Database_Script/core_db/prolms/data/mdl_adminpresets_it.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_adminpresets_it_a.sql
+:000000 100644 00000000 1dd62485 A	Database_Script/core_db/prolms/data/mdl_adminpresets_plug.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_indicator_calc.sql
+:000000 100644 00000000 b83b8840 A	Database_Script/core_db/prolms/data/mdl_analytics_models.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_models_log.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_predict_samples.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_prediction_actions.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_predictions.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_train_samples.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_used_analysables.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_analytics_used_files.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign_grades.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign_overrides.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign_plugin_config.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign_submission.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign_user_flags.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assign_user_mapping.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignfeedback_comments.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignfeedback_editpdf_annot.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignfeedback_editpdf_cmnt.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignfeedback_editpdf_quick.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignfeedback_editpdf_rot.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignfeedback_file.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignment.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignment_submissions.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignment_upgrade.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignsubmission_file.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_assignsubmission_onlinetext.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_auth_lti_linked_login.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_auth_oauth2_linked_login.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_backup_controllers.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_backup_courses.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_backup_logs.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_alignment.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_backpack.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_backpack_oauth2.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_criteria.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_criteria_met.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_criteria_param.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_endorsement.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_external.sql
+:000000 100644 00000000 7fbe93fa A	Database_Script/core_db/prolms/data/mdl_badge_external_backpack.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_external_identifier.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_issued.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_manual_award.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_badge_related.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_bigbluebuttonbn.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_bigbluebuttonbn_logs.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_bigbluebuttonbn_recordings.sql
+:000000 100644 00000000 dee26c50 A	Database_Script/core_db/prolms/data/mdl_block.sql
+:000000 100644 00000000 88132512 A	Database_Script/core_db/prolms/data/mdl_block_instances.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_block_positions.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_block_recent_activity.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_block_recentlyaccesseditems.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_block_rss_client.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_blog_association.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_blog_external.sql
+:000000 100644 00000000 e69de29b A	Database_Script/core_db/prolms/data/mdl_book.sql
+:000000 100644 00000000 e69

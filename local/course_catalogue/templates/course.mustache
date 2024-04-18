@@ -1,0 +1,49 @@
+<div class="card dashboard-card {{ animation }}">
+        <a href="{{url}}" class="dashboard-card-img-wrapper">
+                <div class="card-img dashboard-card-img" style="background-image: url('{{thumbnail}}')"></div>
+                <span class="helper-badge course-duration">{{duration}}</span>
+                {{#mandatory}}
+                <span class="helper-badge course-mandatory">Mandatory</span>
+                {{/mandatory}}
+                {{#progress}}
+                <span class="helper-badge course-progress">
+                        <b>{{progress}}%</b> completed
+                </span>
+                {{/progress}}
+        </a>
+        {{#progress}}
+        <div class="progress course-progress-bar" style="height: 5px;border-radius: 0;">
+                <div class="progress-ba
+                
+                r bg-primary" style="width: {{ progress }}%" role="progressbar"
+                        aria-valuenow="{{ progress }}" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        {{/progress}}
+        <div class="card-body course-info-container">
+                <div class="d-flex align-items-start">
+                        <div class="w-100">
+                                <a href="{{url}}" class="aalink coursename text-truncate d-block" title="{{tooltip}}"
+                                        data-toggle="tooltip">
+                                        <span class="multiline">
+                                                {{title}} 
+                                        </span>
+                                </a>
+                                <div class="customfields">
+                                {{{rating}}}
+                                </div>
+                                
+                                <div class="text-muted muted d-flex flex-wrap">
+                                        <span class="categoryname text-truncate">
+                                                {{category}}
+                                        </span>
+                                        {{#proficiency_level}}
+                                        <span class="mx-1">&bull;</span>
+                                        <span class="categoryname text-truncate">
+                                                {{proficiency_level}}
+                                        </span>
+                                        {{/proficiency_level}}
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>

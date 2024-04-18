@@ -1,0 +1,23 @@
+CREATE TABLE `mdl_choice` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `course` bigint(10) NOT NULL DEFAULT 0,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `intro` longtext NOT NULL,
+  `introformat` smallint(4) NOT NULL DEFAULT 0,
+  `publish` tinyint(2) NOT NULL DEFAULT 0,
+  `showresults` tinyint(2) NOT NULL DEFAULT 0,
+  `display` smallint(4) NOT NULL DEFAULT 0,
+  `allowupdate` tinyint(2) NOT NULL DEFAULT 0,
+  `allowmultiple` tinyint(2) NOT NULL DEFAULT 0,
+  `showunanswered` tinyint(2) NOT NULL DEFAULT 0,
+  `includeinactive` tinyint(2) NOT NULL DEFAULT 1,
+  `limitanswers` tinyint(2) NOT NULL DEFAULT 0,
+  `timeopen` bigint(10) NOT NULL DEFAULT 0,
+  `timeclose` bigint(10) NOT NULL DEFAULT 0,
+  `showpreview` tinyint(2) NOT NULL DEFAULT 0,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `completionsubmit` tinyint(1) NOT NULL DEFAULT 0,
+  `showavailable` tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_choi_cou_ix` (`course`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Available choices are stored here'

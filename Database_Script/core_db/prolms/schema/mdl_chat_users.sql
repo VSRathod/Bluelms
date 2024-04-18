@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_chat_users` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `chatid` bigint(11) NOT NULL DEFAULT 0,
+  `userid` bigint(11) NOT NULL DEFAULT 0,
+  `groupid` bigint(11) NOT NULL DEFAULT 0,
+  `version` varchar(16) NOT NULL DEFAULT '',
+  `ip` varchar(45) NOT NULL DEFAULT '',
+  `firstping` bigint(10) NOT NULL DEFAULT 0,
+  `lastping` bigint(10) NOT NULL DEFAULT 0,
+  `lastmessageping` bigint(10) NOT NULL DEFAULT 0,
+  `sid` varchar(32) NOT NULL DEFAULT '',
+  `course` bigint(10) NOT NULL DEFAULT 0,
+  `lang` varchar(30) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`),
+  KEY `mdl_chatuser_use_ix` (`userid`),
+  KEY `mdl_chatuser_las_ix` (`lastping`),
+  KEY `mdl_chatuser_gro_ix` (`groupid`),
+  KEY `mdl_chatuser_cha_ix` (`chatid`),
+  KEY `mdl_chatuser_cou_ix` (`course`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Keeps track of which users are in which chat rooms'

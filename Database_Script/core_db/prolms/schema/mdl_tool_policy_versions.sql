@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_tool_policy_versions` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(1333) NOT NULL DEFAULT '',
+  `type` smallint(3) NOT NULL DEFAULT 0,
+  `audience` smallint(3) NOT NULL DEFAULT 0,
+  `archived` smallint(3) NOT NULL DEFAULT 0,
+  `usermodified` bigint(10) NOT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL,
+  `policyid` bigint(10) NOT NULL,
+  `agreementstyle` smallint(3) NOT NULL DEFAULT 0,
+  `optional` smallint(3) NOT NULL DEFAULT 0,
+  `revision` varchar(1333) NOT NULL DEFAULT '',
+  `summary` longtext NOT NULL,
+  `summaryformat` smallint(3) NOT NULL,
+  `content` longtext NOT NULL,
+  `contentformat` smallint(3) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_toolpolivers_use_ix` (`usermodified`),
+  KEY `mdl_toolpolivers_pol_ix` (`policyid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Holds versions of the policy documents'

@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_mnet_host` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `deleted` tinyint(1) NOT NULL DEFAULT 0,
+  `wwwroot` varchar(255) NOT NULL DEFAULT '',
+  `ip_address` varchar(45) NOT NULL DEFAULT '',
+  `name` varchar(80) NOT NULL DEFAULT '',
+  `public_key` longtext NOT NULL,
+  `public_key_expires` bigint(10) NOT NULL DEFAULT 0,
+  `transport` tinyint(2) NOT NULL DEFAULT 0,
+  `portno` mediumint(5) NOT NULL DEFAULT 0,
+  `last_connect_time` bigint(10) NOT NULL DEFAULT 0,
+  `last_log_id` bigint(10) NOT NULL DEFAULT 0,
+  `force_theme` tinyint(1) NOT NULL DEFAULT 0,
+  `theme` varchar(100) DEFAULT NULL,
+  `applicationid` bigint(10) NOT NULL DEFAULT 1,
+  `sslverification` tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_mnethost_las_ix` (`last_log_id`),
+  KEY `mdl_mnethost_app_ix` (`applicationid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Information about the local and remote hosts for RPC'

@@ -1,0 +1,11 @@
+1	core	user	1	1	user_get_tagged_users	/user/lib.php	2	0
+2	core	course	1	1	course_get_tagged_courses	/course/lib.php	0	0
+3	core_question	question	1	1	\N	\N	0	1
+4	core	post	1	1	blog_get_tagged_posts	/blog/lib.php	0	0
+5	core	blog_external	1	1	\N	\N	0	0
+6	core	course_modules	1	1	course_get_tagged_course_modules	/course/lib.php	0	0
+7	mod_book	book_chapters	1	1	mod_book_get_tagged_chapters	/mod/book/locallib.php	0	0
+8	mod_data	data_records	1	1	mod_data_get_tagged_records	/mod/data/locallib.php	0	0
+9	mod_forum	forum_posts	1	1	mod_forum_get_tagged_posts	/mod/forum/locallib.php	0	0
+10	mod_glossary	glossary_entries	1	1	mod_glossary_get_tagged_entries	/mod/glossary/locallib.php	0	0
+11	mod_wiki	wiki_pages	1	1	mod_wiki_get_tagged_pages	/mod/wiki/locallib.php	0	0

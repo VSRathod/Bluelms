@@ -1,0 +1,37 @@
+<!-- live section starts here-->
+<div class="col-md-12">
+  <div class="d-flex overview-inn">
+    {{#sessioncontent}}
+    <div class="w-100">
+      <div>
+        
+        <table class="table table-bordered table-striped w-100 rounded">
+          <thead class="table-secondary">
+            <tr>
+              <td colspan="5"><h5>Course Live Sessions </h5></td>
+            </tr>
+            <tr>
+              <th>Course Name</th>
+              <th>Activity Name</th>
+              <th>Module Name</th>
+              <th>Due Date</th>
+              <th>Join</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{course}}</td>
+              <td>{{activityname}}</td>
+              <td>{{module}}</td>
+              <td>{{starttime}}</td>
+              <td><a href="{{url}}" class="btn btn-primary btn-sm">Join Now</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="card-text">{{starttime}} | {{username}}</p>
+      </div>
+    </div>
+    {{/sessioncontent}}
+  </div>
+</div>
+<!-- live section end here-->

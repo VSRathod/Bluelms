@@ -1,0 +1,22 @@
+CREATE TABLE `mdl_external_tokens` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `token` varchar(128) NOT NULL DEFAULT '',
+  `privatetoken` varchar(64) DEFAULT NULL,
+  `tokentype` smallint(4) NOT NULL,
+  `userid` bigint(10) NOT NULL,
+  `externalserviceid` bigint(10) NOT NULL,
+  `sid` varchar(128) DEFAULT NULL,
+  `contextid` bigint(10) NOT NULL,
+  `creatorid` bigint(10) NOT NULL DEFAULT 1,
+  `iprestriction` varchar(255) DEFAULT NULL,
+  `validuntil` bigint(10) DEFAULT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `lastaccess` bigint(10) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `mdl_extetoke_tok_ix` (`token`),
+  KEY `mdl_extetoke_sid_ix` (`sid`),
+  KEY `mdl_extetoke_use_ix` (`userid`),
+  KEY `mdl_extetoke_ext_ix` (`externalserviceid`),
+  KEY `mdl_extetoke_con_ix` (`contextid`),
+  KEY `mdl_extetoke_cre_ix` (`creatorid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Security tokens for accessing of external services'

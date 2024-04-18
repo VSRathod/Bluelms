@@ -1,0 +1,681 @@
+1	core_auth_confirm_user	core_auth_external	confirm_user	\N	moodle		\N
+2	core_auth_request_password_reset	core_auth_external	request_password_reset	\N	moodle		\N
+3	core_auth_is_minor	core_auth_external	is_minor	\N	moodle		\N
+4	core_auth_is_age_digital_consent_verification_enabled	core_auth_external	is_age_digital_consent_verification_enabled	\N	moodle		\N
+5	core_auth_resend_confirmation_email	core_auth_external	resend_confirmation_email	\N	moodle		\N
+6	core_backup_get_async_backup_progress	core_backup_external	get_async_backup_progress	backup/externallib.php	moodle		\N
+7	core_backup_get_async_backup_links_backup	core_backup_external	get_async_backup_links_backup	backup/externallib.php	moodle		\N
+8	core_backup_get_async_backup_links_restore	core_backup_external	get_async_backup_links_restore	backup/externallib.php	moodle		\N
+9	core_backup_get_copy_progress	core_backup_external	get_copy_progress	backup/externallib.php	moodle		\N
+10	core_backup_submit_copy_form	core_backup_external	submit_copy_form	backup/externallib.php	moodle		\N
+11	core_badges_get_user_badges	core_badges_external	get_user_badges	\N	moodle	moodle/badges:viewotherbadges	moodle_mobile_app
+12	core_blog_get_entries	core_blog\\external	get_entries	\N	moodle		moodle_mobile_app
+13	core_blog_view_entries	core_blog\\external	view_entries	\N	moodle		moodle_mobile_app
+14	core_calendar_get_calendar_monthly_view	core_calendar_external	get_calendar_monthly_view	calendar/externallib.php	moodle		moodle_mobile_app
+15	core_calendar_get_calendar_day_view	core_calendar_external	get_calendar_day_view	calendar/externallib.php	moodle		moodle_mobile_app
+16	core_calendar_get_calendar_upcoming_view	core_calendar_external	get_calendar_upcoming_view	calendar/externallib.php	moodle		moodle_mobile_app
+17	core_calendar_update_event_start_day	core_calendar_external	update_event_start_day	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+18	core_calendar_create_calendar_events	core_calendar_external	create_calendar_events	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+19	core_calendar_delete_calendar_events	core_calendar_external	delete_calendar_events	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+20	core_calendar_get_calendar_events	core_calendar_external	get_calendar_events	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+21	core_calendar_get_action_events_by_timesort	core_calendar_external	get_calendar_action_events_by_timesort	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+22	core_calendar_get_action_events_by_course	core_calendar_external	get_calendar_action_events_by_course	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+23	core_calendar_get_action_events_by_courses	core_calendar_external	get_calendar_action_events_by_courses	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+24	core_calendar_get_calendar_event_by_id	core_calendar_external	get_calendar_event_by_id	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+25	core_calendar_submit_create_update_form	core_calendar_external	submit_create_update_form	calendar/externallib.php	moodle	moodle/calendar:manageentries, moodle/calendar:manageownentries, moodle/calendar:managegroupentries	moodle_mobile_app
+26	core_calendar_get_calendar_access_information	core_calendar_external	get_calendar_access_information	calendar/externallib.php	moodle		moodle_mobile_app
+27	core_calendar_get_allowed_event_types	core_calendar_external	get_allowed_event_types	calendar/externallib.php	moodle		moodle_mobile_app
+28	core_calendar_get_timestamps	core_calendar_external	get_timestamps	calendar/externallib.php	moodle		\N
+29	core_calendar_get_calendar_export_token	core_calendar\\external\\export\\token	execute	\N	moodle		moodle_mobile_app
+30	core_calendar_delete_subscription	core_calendar\\external\\subscription\\delete	execute	\N	moodle		\N
+31	core_cohort_add_cohort_members	core_cohort_external	add_cohort_members	cohort/externallib.php	moodle	moodle/cohort:assign	\N
+32	core_cohort_create_cohorts	core_cohort_external	create_cohorts	cohort/externallib.php	moodle	moodle/cohort:manage	\N
+33	core_cohort_delete_cohort_members	core_cohort_external	delete_cohort_members	cohort/externallib.php	moodle	moodle/cohort:assign	\N
+34	core_cohort_delete_cohorts	core_cohort_external	delete_cohorts	cohort/externallib.php	moodle	moodle/cohort:manage	\N
+35	core_cohort_get_cohort_members	core_cohort_external	get_cohort_members	cohort/externallib.php	moodle	moodle/cohort:view	\N
+36	core_cohort_search_cohorts	core_cohort_external	search_cohorts	cohort/externallib.php	moodle	moodle/cohort:view	\N
+37	core_cohort_get_cohorts	core_cohort_external	get_cohorts	cohort/externallib.php	moodle	moodle/cohort:view	\N
+38	core_cohort_update_cohorts	core_cohort_external	update_cohorts	cohort/externallib.php	moodle	moodle/cohort:manage	\N
+39	core_comment_get_comments	core_comment_external	get_comments	\N	moodle	moodle/comment:view	moodle_mobile_app
+40	core_comment_add_comments	core_comment_external	add_comments	\N	moodle		moodle_mobile_app
+41	core_comment_delete_comments	core_comment_external	delete_comments	\N	moodle		moodle_mobile_app
+42	core_completion_get_activities_completion_status	core_completion_external	get_activities_completion_status	\N	moodle		moodle_mobile_app
+43	core_completion_get_course_completion_status	core_completion_external	get_course_completion_status	\N	moodle	report/completion:view	moodle_mobile_app
+44	core_completion_mark_course_self_completed	core_completion_external	mark_course_self_completed	\N	moodle		moodle_mobile_app
+45	core_completion_update_activity_completion_status_manually	core_completion_external	update_activity_completion_status_manually	\N	moodle		moodle_mobile_app
+46	core_completion_override_activity_completion_status	core_completion_external	override_activity_completion_status	\N	moodle	moodle/course:overridecompletion	\N
+47	core_course_create_categories	core_course_external	create_categories	course/externallib.php	moodle	moodle/category:manage	\N
+48	core_course_create_courses	core_course_external	create_courses	course/externallib.php	moodle	moodle/course:create, moodle/course:visibility	\N
+49	core_course_delete_categories	core_course_external	delete_categories	course/externallib.php	moodle	moodle/category:manage	\N
+50	core_course_delete_courses	core_course_external	delete_courses	course/externallib.php	moodle	moodle/course:delete	\N
+51	core_course_delete_modules	core_course_external	delete_modules	course/externallib.php	moodle	moodle/course:manageactivities	\N
+52	core_course_duplicate_course	core_course_external	duplicate_course	course/externallib.php	moodle	moodle/backup:backupcourse, moodle/restore:restorecourse, moodle/course:create	\N
+53	core_course_get_categories	core_course_external	get_categories	course/externallib.php	moodle	moodle/category:viewhiddencategories	moodle_mobile_app
+54	core_course_get_contents	core_course_external	get_course_contents	course/externallib.php	moodle	moodle/course:update, moodle/course:viewhiddencourses	moodle_mobile_app
+55	core_course_get_course_module	core_course_external	get_course_module	course/externallib.php	moodle		moodle_mobile_app
+56	core_course_get_course_module_by_instance	core_course_external	get_course_module_by_instance	course/externallib.php	moodle		moodle_mobile_app
+57	core_course_get_module	core_course_external	get_module	course/externallib.php	moodle		\N
+58	core_courseformat_get_state	core_courseformat\\external\\get_state	execute	\N	moodle		\N
+59	core_courseformat_update_course	core_courseformat\\external\\update_course	execute	\N	moodle	moodle/course:sectionvisibility, moodle/course:activityvisibility	\N
+60	core_course_edit_module	core_course_external	edit_module	course/externallib.php	moodle		\N
+61	core_course_edit_section	core_course_external	edit_section	course/externallib.php	moodle		\N
+62	core_course_get_courses	core_course_external	get_courses	course/externallib.php	moodle	moodle/course:view, moodle/course:update, moodle/course:viewhiddencourses	moodle_mobile_app
+63	core_course_import_course	core_course_external	import_course	course/externallib.php	moodle	moodle/backup:backuptargetimport, moodle/restore:restoretargetimport	\N
+64	core_course_search_courses	core_course_external	search_courses	course/externallib.php	moodle		moodle_mobile_app
+65	core_course_update_categories	core_course_external	update_categories	course/externallib.php	moodle	moodle/category:manage	\N
+66	core_course_update_courses	core_course_external	update_courses	course/externallib.php	moodle	moodle/course:update, moodle/course:changecategory, moodle/course:changefullname, moodle/course:changeshortname, moodle/course:changeidnumber, moodle/course:changesummary, moodle/course:visibility	\N
+67	core_course_view_course	core_course_external	view_course	course/externallib.php	moodle		moodle_mobile_app
+68	core_course_get_user_navigation_options	core_course_external	get_user_navigation_options	course/externallib.php	moodle		moodle_mobile_app
+69	core_course_get_user_administration_options	core_course_external	get_user_administration_options	course/externallib.php	moodle		moodle_mobile_app
+70	core_course_get_courses_by_field	core_course_external	get_courses_by_field	course/externallib.php	moodle		moodle_mobile_app
+71	core_course_check_updates	core_course_external	check_updates	course/externallib.php	moodle		moodle_mobile_app
+72	core_course_get_updates_since	core_course_external	get_updates_since	course/externallib.php	moodle		moodle_mobile_app
+73	core_course_get_enrolled_courses_by_timeline_classification	core_course_external	get_enrolled_courses_by_timeline_classification	course/externallib.php	moodle		moodle_mobile_app
+74	core_course_get_enrolled_courses_with_action_events_by_timeline_classification	\\core_course\\external\\get_enrolled_courses_with_action_events_by_timeline_classification	execute	\N	moodle		moodle_mobile_app
+75	core_course_get_recent_courses	core_course_external	get_recent_courses	course/externallib.php	moodle		moodle_mobile_app
+76	core_course_set_favourite_courses	core_course_external	set_favourite_courses	course/externallib.php	moodle		moodle_mobile_app
+77	core_course_get_enrolled_users_by_cmid	core_course_external	get_enrolled_users_by_cmid	course/externallib.php	moodle		\N
+78	core_course_add_content_item_to_user_favourites	core_course_external	add_content_item_to_user_favourites	course/externallib.php	moodle		\N
+79	core_course_remove_content_item_from_user_favourites	core_course_external	remove_content_item_from_user_favourites	course/externallib.php	moodle		\N
+80	core_course_get_course_content_items	core_course_external	get_course_content_items	course/externallib.php	moodle		\N
+81	core_course_get_activity_chooser_footer	core_course_external	get_activity_chooser_footer	course/externallib.php	moodle		\N
+82	core_course_toggle_activity_recommendation	core_course_external	toggle_activity_recommendation	course/externallib.php	moodle		\N
+83	core_enrol_get_course_enrolment_methods	core_enrol_external	get_course_enrolment_methods	enrol/externallib.php	moodle		moodle_mobile_app
+84	core_enrol_get_enrolled_users	core_enrol_external	get_enrolled_users	enrol/externallib.php	moodle	moodle/user:viewdetails, moodle/user:viewhiddendetails, moodle/course:useremail, moodle/user:update, moodle/site:accessallgroups	moodle_mobile_app
+85	core_enrol_get_enrolled_users_with_capability	core_enrol_external	get_enrolled_users_with_capability	enrol/externallib.php	moodle		\N
+86	core_enrol_get_potential_users	core_enrol_external	get_potential_users	enrol/externallib.php	moodle	moodle/course:enrolreview	\N
+87	core_enrol_search_users	core_enrol_external	search_users	enrol/externallib.php	moodle	moodle/course:viewparticipants	moodle_mobile_app
+88	core_enrol_get_users_courses	core_enrol_external	get_users_courses	enrol/externallib.php	moodle	moodle/course:viewparticipants	moodle_mobile_app
+89	core_enrol_submit_user_enrolment_form	core_enrol_external	submit_user_enrolment_form	enrol/externallib.php	moodle		\N
+90	core_enrol_unenrol_user_enrolment	core_enrol_external	unenrol_user_enrolment	enrol/externallib.php	moodle		\N
+91	core_fetch_notifications	core_external	fetch_notifications	lib/external/externallib.php	moodle		\N
+92	core_session_touch	core\\session\\external	touch_session	\N	moodle		\N
+93	core_session_time_remaining	core\\session\\external	time_remaining	\N	moodle		\N
+94	core_files_get_files	core_files_external	get_files	files/externallib.php	moodle		moodle_mobile_app
+95	core_files_upload	core_files_external	upload	files/externallib.php	moodle		\N
+96	core_files_delete_draft_files	core_files\\external\\delete\\draft	execute	\N	moodle		moodle_mobile_app
+97	core_files_get_unused_draft_itemid	core_files\\external\\get\\unused_draft	execute	\N	moodle		moodle_mobile_app
+98	core_form_get_filetypes_browser_data	core_form\\external	get_filetypes_browser_data	\N	moodle		\N
+99	core_form_dynamic_form	core_form\\external\\dynamic_form	execute	\N	moodle		\N
+100	core_get_component_strings	core_external	get_component_strings	lib/external/externallib.php	moodle		moodle_mobile_app
+101	core_get_fragment	core_external	get_fragment	lib/external/externallib.php	moodle		\N
+102	core_get_string	core_external	get_string	lib/external/externallib.php	moodle		\N
+103	core_get_strings	core_external	get_strings	lib/external/externallib.php	moodle		\N
+104	core_get_user_dates	core_external	get_user_dates	lib/external/externallib.php	moodle		\N
+105	core_grades_update_grades	core_grades_external	update_grades	\N	moodle		\N
+106	core_grades_grader_gradingpanel_point_fetch	core_grades\\grades\\grader\\gradingpanel\\point\\external\\fetch	execute	\N	moodle		moodle_mobile_app
+107	core_grades_grader_gradingpanel_point_store	core_grades\\grades\\grader\\gradingpanel\\point\\external\\store	execute	\N	moodle		moodle_mobile_app
+108	core_grades_grader_gradingpanel_scale_fetch	core_grades\\grades\\grader\\gradingpanel\\scale\\external\\fetch	execute	\N	moodle		moodle_mobile_app
+109	core_grades_grader_gradingpanel_scale_store	core_grades\\grades\\grader\\gradingpanel\\scale\\external\\store	execute	\N	moodle		moodle_mobile_app
+110	core_grades_create_gradecategory	core_grades_external	create_gradecategory	\N	moodle	moodle/grade:manage	\N
+111	core_grades_create_gradecategories	core_grades\\external\\create_gradecategories	execute	\N	moodle	moodle/grade:manage	\N
+112	core_grades_get_enrolled_users_for_search_widget	core_grades\\external\\get_enrolled_users_for_search_widget	execute	\N	moodle		moodle_mobile_app
+113	core_grades_get_groups_for_search_widget	core_grades\\external\\get_groups_for_search_widget	execute	\N	moodle		moodle_mobile_app
+114	core_grades_get_gradable_users	core_grades\\external\\get_gradable_users	execute	\N	moodle		moodle_mobile_app
+115	core_grading_get_definitions	core_grading_external	get_definitions	\N	moodle		\N
+116	core_grading_get_gradingform_instances	core_grading_external	get_gradingform_instances	\N	moodle		\N
+117	core_grading_save_definitions	core_grading_external	save_definitions	\N	moodle		\N
+118	core_group_add_group_members	core_group_external	add_group_members	group/externallib.php	moodle	moodle/course:managegroups	\N
+119	core_group_assign_grouping	core_group_external	assign_grouping	group/externallib.php	moodle		\N
+120	core_group_create_groupings	core_group_external	create_groupings	group/externallib.php	moodle		\N
+121	core_group_create_groups	core_group_external	create_groups	group/externallib.php	moodle	moodle/course:managegroups	\N
+122	core_group_delete_group_members	core_group_external	delete_group_members	group/externallib.php	moodle	moodle/course:managegroups	\N
+123	core_group_delete_groupings	core_group_external	delete_groupings	group/externallib.php	moodle		\N
+124	core_group_delete_groups	core_group_external	delete_groups	group/externallib.php	moodle	moodle/course:managegroups	\N
+125	core_group_get_activity_allowed_groups	core_group_external	get_activity_allowed_groups	group/externallib.php	moodle		moodle_mobile_app
+126	core_group_get_activity_groupmode	core_group_external	get_activity_groupmode	group/externallib.php	moodle		moodle_mobile_app
+127	core_group_get_course_groupings	core_group_external	get_course_groupings	group/externallib.php	moodle		moodle_mobile_app
+128	core_group_get_course_groups	core_group_external	get_course_groups	group/externallib.php	moodle	moodle/course:managegroups	moodle_mobile_app
+129	core_group_get_course_user_groups	core_group_external	get_course_user_groups	group/externallib.php	moodle	moodle/course:managegroups	moodle_mobile_app
+130	core_group_get_group_members	core_group_external	get_group_members	group/externallib.php	moodle	moodle/course:managegroups	\N
+131	core_group_get_groupings	core_group_external	get_groupings	group/externallib.php	moodle		\N
+132	core_group_get_groups	core_group_external	get_groups	group/externallib.php	moodle	moodle/course:managegroups	\N
+133	core_group_unassign_grouping	core_group_external	unassign_grouping	group/externallib.php	moodle		\N
+134	core_group_update_groupings	core_group_external	update_groupings	group/externallib.php	moodle		\N
+135	core_group_update_groups	core_group_external	update_groups	group/externallib.php	moodle	moodle/course:managegroups	\N
+136	core_message_mute_conversations	core_message_external	mute_conversations	message/externallib.php	moodle		moodle_mobile_app
+137	core_message_unmute_conversations	core_message_external	unmute_conversations	message/externallib.php	moodle		moodle_mobile_app
+138	core_message_block_user	core_message_external	block_user	message/externallib.php	moodle		moodle_mobile_app
+139	core_message_get_contact_requests	core_message_external	get_contact_requests	message/externallib.php	moodle		moodle_mobile_app
+140	core_message_create_contact_request	core_message_external	create_contact_request	message/externallib.php	moodle		moodle_mobile_app
+141	core_message_confirm_contact_request	core_message_external	confirm_contact_request	message/externallib.php	moodle		moodle_mobile_app
+142	core_message_decline_contact_request	core_message_external	decline_contact_request	message/externallib.php	moodle		moodle_mobile_app
+143	core_message_get_received_contact_requests_count	core_message_external	get_received_contact_requests_count	message/externallib.php	moodle		moodle_mobile_app
+144	core_message_delete_contacts	core_message_external	delete_contacts	message/externallib.php	moodle		moodle_mobile_app
+145	core_message_delete_conversations_by_id	core_message_external	delete_conversations_by_id	message/externallib.php	moodle	moodle/site:deleteownmessage	moodle_mobile_app
+146	core_message_delete_message	core_message_external	delete_message	message/externallib.php	moodle	moodle/site:deleteownmessage	moodle_mobile_app
+147	core_message_get_blocked_users	core_message_external	get_blocked_users	message/externallib.php	moodle		moodle_mobile_app
+148	core_message_data_for_messagearea_search_messages	core_message_external	data_for_messagearea_search_messages	message/externallib.php	moodle		moodle_mobile_app
+149	core_message_message_search_users	core_message_external	message_search_users	message/externallib.php	moodle		moodle_mobile_app
+150	core_message_get_user_contacts	core_message_external	get_user_contacts	message/externallib.php	moodle		moodle_mobile_app
+151	core_message_get_conversations	core_message_external	get_conversations	message/externallib.php	moodle		moodle_mobile_app
+152	core_message_get_conversation	core_message_external	get_conversation	message/externallib.php	moodle		moodle_mobile_app
+153	core_message_get_conversation_between_users	core_message_external	get_conversation_between_users	message/externallib.php	moodle		moodle_mobile_app
+154	core_message_get_self_conversation	core_message_external	get_self_conversation	message/externallib.php	moodle		moodle_mobile_app
+155	core_message_get_messages	core_message_external	get_messages	message/externallib.php	moodle		moodle_mobile_app
+156	core_message_get_conversation_counts	core_message_external	get_conversation_counts	message/externallib.php	moodle		moodle_mobile_app
+157	core_message_get_unread_conversation_counts	core_message_external	get_unread_conversation_counts	message/externallib.php	moodle		moodle_mobile_app
+158	core_message_get_conversation_members	core_message_external	get_conversation_members	message/externallib.php	moodle		moodle_mobile_app
+159	core_message_get_member_info	core_message_external	get_member_info	message/externallib.php	moodle		moodle_mobile_app
+160	core_message_get_unread_conversations_count	core_message_external	get_unread_conversations_count	message/externallib.php	moodle		moodle_mobile_app
+161	core_message_mark_all_notifications_as_read	core_message_external	mark_all_notifications_as_read	message/externallib.php	moodle		moodle_mobile_app
+162	core_message_mark_all_conversation_messages_as_read	core_message_external	mark_all_conversation_messages_as_read	message/externallib.php	moodle		moodle_mobile_app
+163	core_message_mark_message_read	core_message_external	mark_message_read	message/externallib.php	moodle		moodle_mobile_app
+164	core_message_mark_notification_read	core_message_external	mark_notification_read	message/externallib.php	moodle		moodle_mobile_app
+165	core_message_message_processor_config_form	core_message_external	message_processor_config_form	message/externallib.php	moodle		moodle_mobile_app
+166	core_message_get_message_processor	core_message_external	get_message_processor	message/externallib.php	moodle		\N
+167	core_message_search_contacts	core_message_external	search_contacts	message/externallib.php	moodle		moodle_mobile_app
+168	core_message_send_instant_messages	core_message_external	send_instant_messages	message/externallib.php	moodle	moodle/site:sendmessage	moodle_mobile_app
+169	core_message_send_messages_to_conversation	core_message_external	send_messages_to_conversation	message/externallib.php	moodle	moodle/site:sendmessage	moodle_mobile_app
+170	core_message_get_conversation_messages	core_message_external	get_conversation_messages	message/externallib.php	moodle		moodle_mobile_app
+171	core_message_unblock_user	core_message_external	unblock_user	message/externallib.php	moodle		moodle_mobile_app
+172	core_message_get_user_notification_preferences	core_message_external	get_user_notification_preferences	message/externallib.php	moodle	moodle/user:editownmessageprofile	moodle_mobile_app
+173	core_message_get_user_message_preferences	core_message_external	get_user_message_preferences	message/externallib.php	moodle	moodle/user:editownmessageprofile	moodle_mobile_app
+174	core_message_set_favourite_conversations	core_message_external	set_favourite_conversations	message/externallib.php	moodle		moodle_mobile_app
+175	core_message_unset_favourite_conversations	core_message_external	unset_favourite_conversations	message/externallib.php	moodle		moodle_mobile_app
+176	core_message_delete_message_for_all_users	core_message_external	delete_message_for_all_users	message/externallib.php	moodle	moodle/site:deleteanymessage	moodle_mobile_app
+177	core_message_get_unread_notification_count	\\core_message\\external\\get_unread_notification_count	execute	\N	moodle		moodle_mobile_app
+178	core_notes_create_notes	core_notes_external	create_notes	notes/externallib.php	moodle	moodle/notes:manage	moodle_mobile_app
+179	core_notes_delete_notes	core_notes_external	delete_notes	notes/externallib.php	moodle	moodle/notes:manage	moodle_mobile_app
+180	core_notes_get_course_notes	core_notes_external	get_course_notes	notes/externallib.php	moodle	moodle/notes:view	moodle_mobile_app
+181	core_notes_get_notes	core_notes_external	get_notes	notes/externallib.php	moodle	moodle/notes:view	\N
+182	core_notes_update_notes	core_notes_external	update_notes	notes/externallib.php	moodle	moodle/notes:manage	\N
+183	core_notes_view_notes	core_notes_external	view_notes	notes/externallib.php	moodle	moodle/notes:view	moodle_mobile_app
+184	core_output_load_template	core\\output\\external	load_template	\N	moodle		\N
+185	core_output_load_template_with_dependencies	core\\output\\external	load_template_with_dependencies	\N	moodle		\N
+186	core_output_load_fontawesome_icon_map	core\\output\\external	load_fontawesome_icon_map	\N	moodle		\N
+187	core_output_load_fontawesome_icon_system_map	core\\external\\output\\icon_system\\load_fontawesome_map	execute	\N	moodle		\N
+188	core_question_update_flag	core_question_external	update_flag	\N	moodle	moodle/question:flag	moodle_mobile_app
+189	core_question_submit_tags_form	core_question_external	submit_tags_form	\N	moodle		\N
+190	core_question_get_random_question_summaries	core_question_external	get_random_question_summaries	\N	moodle		\N
+191	core_rating_get_item_ratings	core_rating_external	get_item_ratings	\N	moodle	moodle/rating:view	moodle_mobile_app
+192	core_rating_add_rating	core_rating_external	add_rating	\N	moodle	moodle/rating:rate	moodle_mobile_app
+193	core_role_assign_roles	core_role_external	assign_roles	enrol/externallib.php	moodle	moodle/role:assign	\N
+194	core_role_unassign_roles	core_role_external	unassign_roles	enrol/externallib.php	moodle	moodle/role:assign	\N
+195	core_search_get_relevant_users	\\core_search\\external	get_relevant_users	\N	moodle		\N
+196	core_tag_get_tagindex	core_tag_external	get_tagindex	\N	moodle		moodle_mobile_app
+197	core_tag_get_tags	core_tag_external	get_tags	\N	moodle		\N
+198	core_tag_update_tags	core_tag_external	update_tags	\N	moodle		\N
+199	core_tag_get_tagindex_per_area	core_tag_external	get_tagindex_per_area	\N	moodle		moodle_mobile_app
+200	core_tag_get_tag_areas	core_tag_external	get_tag_areas	\N	moodle		moodle_mobile_app
+201	core_tag_get_tag_collections	core_tag_external	get_tag_collections	\N	moodle		moodle_mobile_app
+202	core_tag_get_tag_cloud	core_tag_external	get_tag_cloud	\N	moodle		moodle_mobile_app
+203	core_update_inplace_editable	core_external	update_inplace_editable	lib/external/externallib.php	moodle		\N
+204	core_user_add_user_device	core_user_external	add_user_device	user/externallib.php	moodle		moodle_mobile_app
+205	core_user_update_user_device_public_key	\\core_user\\external\\update_user_device_public_key	execute	\N	moodle		moodle_mobile_app
+206	core_user_add_user_private_files	core_user_external	add_user_private_files	user/externallib.php	moodle	moodle/user:manageownfiles	moodle_mobile_app
+207	core_user_create_users	core_user_external	create_users	user/externallib.php	moodle	moodle/user:create	\N
+208	core_user_delete_users	core_user_external	delete_users	user/externallib.php	moodle	moodle/user:delete	\N
+209	core_user_get_course_user_profiles	core_user_external	get_course_user_profiles	user/externallib.php	moodle	moodle/user:viewdetails, moodle/user:viewhiddendetails, moodle/course:useremail, moodle/user:update, moodle/site:accessallgroups	moodle_mobile_app
+210	core_user_get_users	core_user_external	get_users	user/externallib.php	moodle	moodle/user:viewdetails, moodle/user:viewhiddendetails, moodle/course:useremail, moodle/user:update	\N
+211	core_user_get_users_by_field	core_user_external	get_users_by_field	user/externallib.php	moodle	moodle/user:viewdetails, moodle/user:viewhiddendetails, moodle/course:useremail, moodle/user:update	moodle_mobile_app
+212	core_user_search_identity	\\core_user\\external\\search_identity	execute	\N	moodle	moodle/user:viewalldetails	\N
+213	core_user_remove_user_device	core_user_external	remove_user_device	user/externallib.php	moodle		moodle_mobile_app
+214	core_user_update_users	core_user_external	update_users	user/externallib.php	moodle	moodle/user:update	\N
+215	core_user_update_user_preferences	core_user_external	update_user_preferences	user/externallib.php	moodle	moodle/user:editownmessageprofile, moodle/user:editmessageprofile	moodle_mobile_app
+216	core_user_view_user_list	core_user_external	view_user_list	user/externallib.php	moodle	moodle/course:viewparticipants	moodle_mobile_app
+217	core_user_view_user_profile	core_user_external	view_user_profile	user/externallib.php	moodle	moodle/user:viewdetails	moodle_mobile_app
+218	core_user_get_user_preferences	core_user_external	get_user_preferences	user/externallib.php	moodle		moodle_mobile_app
+219	core_user_update_picture	core_user_external	update_picture	user/externallib.php	moodle	moodle/user:editownprofile, moodle/user:editprofile	moodle_mobile_app
+220	core_user_set_user_preferences	core_user_external	set_user_preferences	user/externallib.php	moodle	moodle/site:config	moodle_mobile_app
+221	core_user_agree_site_policy	core_user_external	agree_site_policy	user/externallib.php	moodle		moodle_mobile_app
+222	core_user_get_private_files_info	core_user_external	get_private_files_info	user/externallib.php	moodle	moodle/user:manageownfiles	moodle_mobile_app
+223	core_competency_create_competency_framework	core_competency\\external	create_competency_framework	\N	moodle	moodle/competency:competencymanage	\N
+224	core_competency_read_competency_framework	core_competency\\external	read_competency_framework	\N	moodle	moodle/competency:competencyview	\N
+225	core_competency_duplicate_competency_framework	core_competency\\external	duplicate_competency_framework	\N	moodle	moodle/competency:competencymanage	\N
+226	core_competency_delete_competency_framework	core_competency\\external	delete_competency_framework	\N	moodle	moodle/competency:competencymanage	\N
+227	core_competency_update_competency_framework	core_competency\\external	update_competency_framework	\N	moodle	moodle/competency:competencymanage	\N
+228	core_competency_list_competency_frameworks	core_competency\\external	list_competency_frameworks	\N	moodle	moodle/competency:competencyview	\N
+229	core_competency_count_competency_frameworks	core_competency\\external	count_competency_frameworks	\N	moodle	moodle/competency:competencyview	\N
+230	core_competency_competency_framework_viewed	core_competency\\external	competency_framework_viewed	\N	moodle	moodle/competency:competencyview	\N
+231	core_competency_create_competency	core_competency\\external	create_competency	\N	moodle	moodle/competency:competencymanage	\N
+232	core_competency_read_competency	core_competency\\external	read_competency	\N	moodle	moodle/competency:competencyview	\N
+233	core_competency_competency_viewed	core_competency\\external	competency_viewed	\N	moodle	moodle/competency:competencyview	moodle_mobile_app
+234	core_competency_delete_competency	core_competency\\external	delete_competency	\N	moodle	moodle/competency:competencymanage	\N
+235	core_competency_update_competency	core_competency\\external	update_competency	\N	moodle	moodle/competency:competencymanage	\N
+236	core_competency_list_competencies	core_competency\\external	list_competencies	\N	moodle	moodle/competency:competencyview	\N
+237	core_competency_list_competencies_in_template	core_competency\\external	list_competencies_in_template	\N	moodle	moodle/competency:competencyview	\N
+238	core_competency_count_competencies	core_competency\\external	count_competencies	\N	moodle	moodle/competency:competencyview	\N
+239	core_competency_count_competencies_in_template	core_competency\\external	count_competencies_in_template	\N	moodle	moodle/competency:competencyview	\N
+240	core_competency_search_competencies	core_competency\\external	search_competencies	\N	moodle	moodle/competency:competencyview	\N
+241	core_competency_set_parent_competency	core_competency\\external	set_parent_competency	\N	moodle	moodle/competency:competencymanage	\N
+242	core_competency_move_up_competency	core_competency\\external	move_up_competency	\N	moodle	moodle/competency:competencymanage	\N
+243	core_competency_move_down_competency	core_competency\\external	move_down_competency	\N	moodle	moodle/competency:competencymanage	\N
+244	core_competency_list_course_module_competencies	core_competency\\external	list_course_module_competencies	\N	moodle	moodle/competency:coursecompetencyview	\N
+245	core_competency_count_course_module_competencies	core_competency\\external	count_course_module_competencies	\N	moodle	moodle/competency:coursecompetencyview	\N
+246	core_competency_list_course_competencies	core_competency\\external	list_course_competencies	\N	moodle	moodle/competency:coursecompetencyview	moodle_mobile_app
+247	core_competency_count_competencies_in_course	core_competency\\external	count_competencies_in_course	\N	moodle	moodle/competency:coursecompetencyview	\N
+248	core_competency_count_courses_using_competency	core_competency\\external	count_courses_using_competency	\N	moodle	moodle/competency:coursecompetencyview	\N
+249	core_competency_add_competency_to_course	core_competency\\external	add_competency_to_course	\N	moodle	moodle/competency:coursecompetencymanage	\N
+250	core_competency_add_competency_to_template	core_competency\\external	add_competency_to_template	\N	moodle	moodle/competency:templatemanage	\N
+251	core_competency_remove_competency_from_course	core_competency\\external	remove_competency_from_course	\N	moodle	moodle/competency:coursecompetencymanage	\N
+252	core_competency_set_course_competency_ruleoutcome	core_competency\\external	set_course_competency_ruleoutcome	\N	moodle	moodle/competency:coursecompetencymanage	\N
+253	core_competency_remove_competency_from_template	core_competency\\external	remove_competency_from_template	\N	moodle	moodle/competency:templatemanage	\N
+254	core_competency_reorder_course_competency	core_competency\\external	reorder_course_competency	\N	moodle	moodle/competency:coursecompetencymanage	\N
+255	core_competency_reorder_template_competency	core_competency\\external	reorder_template_competency	\N	moodle	moodle/competency:templatemanage	\N
+256	core_competency_create_template	core_competency\\external	create_template	\N	moodle	moodle/competency:templatemanage	\N
+257	core_competency_duplicate_template	core_competency\\external	duplicate_template	\N	moodle	moodle/competency:templatemanage	\N
+258	core_competency_read_template	core_competency\\external	read_template	\N	moodle	moodle/competency:templateview	\N
+259	core_competency_delete_template	core_competency\\external	delete_template	\N	moodle	moodle/competency:templatemanage	\N
+260	core_competency_update_template	core_competency\\external	update_template	\N	moodle	moodle/competency:templatemanage	\N
+261	core_competency_list_templates	core_competency\\external	list_templates	\N	moodle	moodle/competency:templateview	\N
+262	core_competency_list_templates_using_competency	core_competency\\external	list_templates_using_competency	\N	moodle	moodle/competency:templateview	\N
+263	core_competency_count_templates	core_competency\\external	count_templates	\N	moodle	moodle/competency:templateview	\N
+264	core_competency_count_templates_using_competency	core_competency\\external	count_templates_using_competency	\N	moodle	moodle/competency:templateview	\N
+265	core_competency_create_plan	core_competency\\external	create_plan	\N	moodle	moodle/competency:planmanage	\N
+266	core_competency_update_plan	core_competency\\external	update_plan	\N	moodle	moodle/competency:planmanage	\N
+267	core_competency_complete_plan	core_competency\\external	complete_plan	\N	moodle	moodle/competency:planmanage	\N
+268	core_competency_reopen_plan	core_competency\\external	reopen_plan	\N	moodle	moodle/competency:planmanage	\N
+269	core_competency_read_plan	core_competency\\external	read_plan	\N	moodle	moodle/competency:planviewown	\N
+270	core_competency_delete_plan	core_competency\\external	delete_plan	\N	moodle	moodle/competency:planmanage	\N
+271	core_competency_list_user_plans	core_competency\\external	list_user_plans	\N	moodle	moodle/competency:planviewown	\N
+272	core_competency_list_plan_competencies	core_competency\\external	list_plan_competencies	\N	moodle	moodle/competency:planviewown	\N
+273	core_competency_add_competency_to_plan	core_competency\\external	add_competency_to_plan	\N	moodle	moodle/competency:planmanage	\N
+274	core_competency_remove_competency_from_plan	core_competency\\external	remove_competency_from_plan	\N	moodle	moodle/competency:planmanage	\N
+275	core_competency_reorder_plan_competency	core_competency\\external	reorder_plan_competency	\N	moodle	moodle/competency:planmanage	\N
+276	core_competency_plan_request_review	core_competency\\external	plan_request_review	\N	moodle	moodle/competency:planmanagedraft	\N
+277	core_competency_plan_start_review	core_competency\\external	plan_start_review	\N	moodle	moodle/competency:planmanage	\N
+278	core_competency_plan_stop_review	core_competency\\external	plan_stop_review	\N	moodle	moodle/competency:planmanage	\N
+279	core_competency_plan_cancel_review_request	core_competency\\external	plan_cancel_review_request	\N	moodle	moodle/competency:planmanagedraft	\N
+280	core_competency_approve_plan	core_competency\\external	approve_plan	\N	moodle	moodle/competency:planmanage	\N
+281	core_competency_unapprove_plan	core_competency\\external	unapprove_plan	\N	moodle	moodle/competency:planmanage	\N
+282	core_competency_template_has_related_data	core_competency\\external	template_has_related_data	\N	moodle	moodle/competency:templateview	\N
+283	core_competency_get_scale_values	core_competency\\external	get_scale_values	\N	moodle	moodle/competency:competencymanage	moodle_mobile_app
+284	core_competency_add_related_competency	core_competency\\external	add_related_competency	\N	moodle	moodle/competency:competencymanage	\N
+285	core_competency_remove_related_competency	core_competency\\external	remove_related_competency	\N	moodle	moodle/competency:competencymanage	\N
+286	core_competency_read_user_evidence	core_competency\\external	read_user_evidence	\N	moodle	moodle/competency:userevidenceview	\N
+287	core_competency_delete_user_evidence	core_competency\\external	delete_user_evidence	\N	moodle	moodle/competency:userevidencemanageown	\N
+288	core_competency_create_user_evidence_competency	core_competency\\external	create_user_evidence_competency	\N	moodle	moodle/competency:userevidencemanageown, moodle/competency:competencyview	\N
+289	core_competency_delete_user_evidence_competency	core_competency\\external	delete_user_evidence_competency	\N	moodle	moodle/competency:userevidencemanageown	\N
+290	core_competency_user_competency_cancel_review_request	core_competency\\external	user_competency_cancel_review_request	\N	moodle	moodle/competency:userevidencemanageown	\N
+291	core_competency_user_competency_request_review	core_competency\\external	user_competency_request_review	\N	moodle	moodle/competency:userevidencemanageown	\N
+292	core_competency_user_competency_start_review	core_competency\\external	user_competency_start_review	\N	moodle	moodle/competency:competencygrade	\N
+293	core_competency_user_competency_stop_review	core_competency\\external	user_competency_stop_review	\N	moodle	moodle/competency:competencygrade	\N
+294	core_competency_user_competency_viewed	core_competency\\external	user_competency_viewed	\N	moodle	moodle/competency:usercompetencyview	moodle_mobile_app
+295	core_competency_user_competency_viewed_in_plan	core_competency\\external	user_competency_viewed_in_plan	\N	moodle	moodle/competency:usercompetencyview	moodle_mobile_app
+296	core_competency_user_competency_viewed_in_course	core_competency\\external	user_competency_viewed_in_course	\N	moodle	moodle/competency:usercompetencyview	moodle_mobile_app
+297	core_competency_user_competency_plan_viewed	core_competency\\external	user_competency_plan_viewed	\N	moodle	moodle/competency:usercompetencyview	moodle_mobile_app
+298	core_competency_grade_competency	core_competency\\external	grade_competency	\N	moodle	moodle/competency:competencygrade	\N
+299	core_competency_grade_competency_in_plan	core_competency\\external	grade_competency_in_plan	\N	moodle	moodle/competency:competencygrade	\N
+300	core_competency_grade_competency_in_course	core_competency\\external	grade_competency_in_course	\N	moodle	moodle/competency:competencygrade	moodle_mobile_app
+301	core_competency_unlink_plan_from_template	core_competency\\external	unlink_plan_from_template	\N	moodle	moodle/competency:planmanage	\N
+302	core_competency_template_viewed	core_competency\\external	template_viewed	\N	moodle	moodle/competency:templateview	\N
+303	core_competency_request_review_of_user_evidence_linked_competencies	core_competency\\external	request_review_of_user_evidence_linked_competencies	\N	moodle	moodle/competency:userevidencemanageown	\N
+304	core_competency_update_course_competency_settings	core_competency\\external	update_course_competency_settings	\N	moodle	moodle/competency:coursecompetencyconfigure	\N
+305	core_competency_delete_evidence	core_competency\\external	delete_evidence	\N	moodle	moodle/competency:evidencedelete	moodle_mobile_app
+306	core_webservice_get_site_info	core_webservice_external	get_site_info	webservice/externallib.php	moodle		moodle_mobile_app
+307	core_block_get_course_blocks	core_block_external	get_course_blocks	\N	moodle		moodle_mobile_app
+308	core_block_get_dashboard_blocks	core_block_external	get_dashboard_blocks	\N	moodle		moodle_mobile_app
+309	core_block_fetch_addable_blocks	core_block\\external\\fetch_addable_blocks	execute	\N	moodle	moodle/site:manageblocks	moodle_mobile_app
+310	core_filters_get_available_in_context	core_filters\\external	get_available_in_context	\N	moodle		moodle_mobile_app
+311	core_customfield_delete_field	core_customfield_external	delete_field	customfield/externallib.php	moodle		\N
+312	core_customfield_reload_template	core_customfield_external	reload_template	customfield/externallib.php	moodle		\N
+313	core_customfield_create_category	core_customfield_external	create_category	customfield/externallib.php	moodle		\N
+314	core_customfield_delete_category	core_customfield_external	delete_category	customfield/externallib.php	moodle		\N
+315	core_customfield_move_field	core_customfield_external	move_field	customfield/externallib.php	moodle		\N
+316	core_customfield_move_category	core_customfield_external	move_category	customfield/externallib.php	moodle		\N
+317	core_h5p_get_trusted_h5p_file	core_h5p\\external	get_trusted_h5p_file	\N	moodle		moodle_mobile_app
+318	core_table_get_dynamic_table_content	core_table\\external\\dynamic\\get	execute	\N	moodle		moodle_mobile_app
+319	core_xapi_statement_post	core_xapi\\external\\post_statement	execute	\N	moodle		moodle_mobile_app
+320	core_contentbank_delete_content	core_contentbank\\external\\delete_content	execute	\N	moodle	moodle/contentbank:deleteanycontent	\N
+321	core_contentbank_rename_content	core_contentbank\\external\\rename_content	execute	\N	moodle	moodle/contentbank:manageowncontent	\N
+322	core_contentbank_set_content_visibility	core_contentbank\\external\\set_content_visibility	execute	\N	moodle	moodle/contentbank:manageowncontent	\N
+323	core_create_userfeedback_action_record	core\\external\\record_userfeedback_action	execute	\N	moodle		\N
+324	core_payment_get_available_gateways	core_payment\\external\\get_available_gateways	execute	\N	moodle		\N
+325	core_reportbuilder_filters_reset	core_reportbuilder\\external\\filters\\reset	execute	\N	moodle		\N
+326	core_reportbuilder_set_filters	core_reportbuilder\\external\\filters\\set	execute	\N	moodle		\N
+327	core_dynamic_tabs_get_content	core\\external\\dynamic_tabs_get_content	execute	\N	moodle		\N
+328	core_change_editmode	core\\external\\editmode	change_editmode	\N	moodle		\N
+329	core_reportbuilder_reports_delete	core_reportbuilder\\external\\reports\\delete	execute	\N	moodle		\N
+330	core_reportbuilder_reports_get	core_reportbuilder\\external\\reports\\get	execute	\N	moodle		\N
+331	core_reportbuilder_list_reports	core_reportbuilder\\external\\reports\\listing	execute	\N	moodle		moodle_mobile_app
+332	core_reportbuilder_retrieve_report	core_reportbuilder\\external\\reports\\retrieve	execute	\N	moodle		moodle_mobile_app
+333	core_reportbuilder_view_report	core_reportbuilder\\external\\reports\\view	execute	\N	moodle		moodle_mobile_app
+334	core_reportbuilder_columns_add	core_reportbuilder\\external\\columns\\add	execute	\N	moodle		\N
+335	core_reportbuilder_columns_delete	core_reportbuilder\\external\\columns\\delete	execute	\N	moodle		\N
+336	core_reportbuilder_columns_reorder	core_reportbuilder\\external\\columns\\reorder	execute	\N	moodle		\N
+337	core_reportbuilder_columns_sort_get	core_reportbuilder\\external\\columns\\sort\\get	execute	\N	moodle		\N
+338	core_reportbuilder_columns_sort_reorder	core_reportbuilder\\external\\columns\\sort\\reorder	execute	\N	moodle		\N
+339	core_reportbuilder_columns_sort_toggle	core_reportbuilder\\external\\columns\\sort\\toggle	execute	\N	moodle		\N
+340	core_reportbuilder_conditions_add	core_reportbuilder\\external\\conditions\\add	execute	\N	moodle		\N
+341	core_reportbuilder_conditions_delete	core_reportbuilder\\external\\conditions\\delete	execute	\N	moodle		\N
+342	core_reportbuilder_conditions_reorder	core_reportbuilder\\external\\conditions\\reorder	execute	\N	moodle		\N
+343	core_reportbuilder_conditions_reset	core_reportbuilder\\external\\conditions\\reset	execute	\N	moodle		\N
+344	core_reportbuilder_filters_add	core_reportbuilder\\external\\filters\\add	execute	\N	moodle		\N
+345	core_reportbuilder_filters_delete	core_reportbuilder\\external\\filters\\delete	execute	\N	moodle		\N
+346	core_reportbuilder_filters_reorder	core_reportbuilder\\external\\filters\\reorder	execute	\N	moodle		\N
+347	core_reportbuilder_audiences_delete	core_reportbuilder\\external\\audiences\\delete	execute	\N	moodle		\N
+348	core_reportbuilder_schedules_delete	core_reportbuilder\\external\\schedules\\delete	execute	\N	moodle		\N
+349	core_reportbuilder_schedules_send	core_reportbuilder\\external\\schedules\\send	execute	\N	moodle		\N
+350	core_reportbuilder_schedules_toggle	core_reportbuilder\\external\\schedules\\toggle	execute	\N	moodle		\N
+351	mod_assign_copy_previous_attempt	mod_assign_external	copy_previous_attempt	mod/assign/externallib.php	mod_assign	mod/assign:view, mod/assign:submit	\N
+352	mod_assign_get_grades	mod_assign_external	get_grades	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+353	mod_assign_get_assignments	mod_assign_external	get_assignments	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+354	mod_assign_get_submissions	mod_assign_external	get_submissions	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+355	mod_assign_get_user_flags	mod_assign_external	get_user_flags	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+356	mod_assign_set_user_flags	mod_assign_external	set_user_flags	mod/assign/externallib.php	mod_assign	mod/assign:grade	moodle_mobile_app
+357	mod_assign_get_user_mappings	mod_assign_external	get_user_mappings	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+358	mod_assign_revert_submissions_to_draft	mod_assign_external	revert_submissions_to_draft	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+359	mod_assign_lock_submissions	mod_assign_external	lock_submissions	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+360	mod_assign_unlock_submissions	mod_assign_external	unlock_submissions	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+361	mod_assign_save_submission	mod_assign_external	save_submission	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+362	mod_assign_submit_for_grading	mod_assign_external	submit_for_grading	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+363	mod_assign_save_grade	mod_assign_external	save_grade	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+364	mod_assign_save_grades	mod_assign_external	save_grades	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+365	mod_assign_save_user_extensions	mod_assign_external	save_user_extensions	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+366	mod_assign_reveal_identities	mod_assign_external	reveal_identities	mod/assign/externallib.php	mod_assign		moodle_mobile_app
+367	mod_assign_view_grading_table	mod_assign_external	view_grading_table	mod/assign/externallib.php	mod_assign	mod/assign:view, mod/assign:viewgrades	moodle_mobile_app
+368	mod_assign_view_submission_status	mod_assign_external	view_submission_status	mod/assign/externallib.php	mod_assign	mod/assign:view	moodle_mobile_app
+369	mod_assign_get_submission_status	mod_assign_external	get_submission_status	mod/assign/externallib.php	mod_assign	mod/assign:view	moodle_mobile_app
+370	mod_assign_list_participants	mod_assign_external	list_participants	mod/assign/externallib.php	mod_assign	mod/assign:view, mod/assign:viewgrades	moodle_mobile_app
+371	mod_assign_submit_grading_form	mod_assign_external	submit_grading_form	mod/assign/externallib.php	mod_assign	mod/assign:grade	moodle_mobile_app
+372	mod_assign_get_participant	mod_assign_external	get_participant	mod/assign/externallib.php	mod_assign	mod/assign:view, mod/assign:viewgrades	moodle_mobile_app
+373	mod_assign_view_assign	mod_assign_external	view_assign	mod/assign/externallib.php	mod_assign	mod/assign:view	moodle_mobile_app
+374	mod_assign_start_submission	mod_assign\\external\\start_submission	execute	\N	mod_assign	mod/assign:view	moodle_mobile_app
+375	mod_bigbluebuttonbn_can_join	mod_bigbluebuttonbn\\external\\can_join	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:view	moodle_mobile_app
+376	mod_bigbluebuttonbn_get_recordings	mod_bigbluebuttonbn\\external\\get_recordings	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:view	moodle_mobile_app
+377	mod_bigbluebuttonbn_get_recordings_to_import	mod_bigbluebuttonbn\\external\\get_recordings_to_import	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:importrecordings	moodle_mobile_app
+378	mod_bigbluebuttonbn_update_recording	mod_bigbluebuttonbn\\external\\update_recording	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:managerecordings	moodle_mobile_app
+379	mod_bigbluebuttonbn_end_meeting	mod_bigbluebuttonbn\\external\\end_meeting	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:join	moodle_mobile_app
+380	mod_bigbluebuttonbn_completion_validate	mod_bigbluebuttonbn\\external\\completion_validate	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:view	moodle_mobile_app
+381	mod_bigbluebuttonbn_meeting_info	mod_bigbluebuttonbn\\external\\meeting_info	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:view	moodle_mobile_app
+382	mod_bigbluebuttonbn_get_bigbluebuttonbns_by_courses	mod_bigbluebuttonbn\\external\\get_bigbluebuttonbns_by_courses	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:view	moodle_mobile_app
+383	mod_bigbluebuttonbn_view_bigbluebuttonbn	mod_bigbluebuttonbn\\external\\view_bigbluebuttonbn	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:view	moodle_mobile_app
+384	mod_bigbluebuttonbn_get_join_url	mod_bigbluebuttonbn\\external\\get_join_url	execute	\N	mod_bigbluebuttonbn	mod/bigbluebuttonbn:join	moodle_mobile_app
+385	mod_book_view_book	mod_book_external	view_book	\N	mod_book	mod/book:read	moodle_mobile_app
+386	mod_book_get_books_by_courses	mod_book_external	get_books_by_courses	\N	mod_book		moodle_mobile_app
+387	mod_chat_login_user	mod_chat_external	login_user	\N	mod_chat	mod/chat:chat	moodle_mobile_app
+388	mod_chat_get_chat_users	mod_chat_external	get_chat_users	\N	mod_chat	mod/chat:chat	moodle_mobile_app
+389	mod_chat_send_chat_message	mod_chat_external	send_chat_message	\N	mod_chat	mod/chat:chat	moodle_mobile_app
+390	mod_chat_get_chat_latest_messages	mod_chat_external	get_chat_latest_messages	\N	mod_chat	mod/chat:chat	moodle_mobile_app
+391	mod_chat_view_chat	mod_chat_external	view_chat	\N	mod_chat	mod/chat:chat	moodle_mobile_app
+392	mod_chat_get_chats_by_courses	mod_chat_external	get_chats_by_courses	\N	mod_chat		moodle_mobile_app
+393	mod_chat_get_sessions	mod_chat_external	get_sessions	\N	mod_chat		moodle_mobile_app
+394	mod_chat_get_session_messages	mod_chat_external	get_session_messages	\N	mod_chat		moodle_mobile_app
+395	mod_choice_get_choice_results	mod_choice_external	get_choice_results	\N	mod_choice		moodle_mobile_app
+396	mod_choice_get_choice_options	mod_choice_external	get_choice_options	\N	mod_choice	mod/choice:choose	moodle_mobile_app
+397	mod_choice_submit_choice_response	mod_choice_external	submit_choice_response	\N	mod_choice	mod/choice:choose	moodle_mobile_app
+398	mod_choice_view_choice	mod_choice_external	view_choice	\N	mod_choice		moodle_mobile_app
+399	mod_choice_get_choices_by_courses	mod_choice_external	get_choices_by_courses	\N	mod_choice		moodle_mobile_app
+400	mod_choice_delete_choice_responses	mod_choice_external	delete_choice_responses	\N	mod_choice	mod/choice:choose	moodle_mobile_app
+401	mod_data_get_databases_by_courses	mod_data_external	get_databases_by_courses	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+402	mod_data_view_database	mod_data_external	view_database	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+403	mod_data_get_data_access_information	mod_data_external	get_data_access_information	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+404	mod_data_get_entries	mod_data_external	get_entries	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+405	mod_data_get_entry	mod_data_external	get_entry	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+406	mod_data_get_fields	mod_data_external	get_fields	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+407	mod_data_search_entries	mod_data_external	search_entries	\N	mod_data	mod/data:viewentry	moodle_mobile_app
+408	mod_data_approve_entry	mod_data_external	approve_entry	\N	mod_data	mod/data:approve	moodle_mobile_app
+409	mod_data_delete_entry	mod_data_external	delete_entry	\N	mod_data	mod/data:manageentries	moodle_mobile_app
+410	mod_data_add_entry	mod_data_external	add_entry	\N	mod_data	mod/data:writeentry	moodle_mobile_app
+411	mod_data_update_entry	mod_data_external	update_entry	\N	mod_data	mod/data:writeentry	moodle_mobile_app
+412	mod_data_delete_saved_preset	mod_data\\external\\delete_saved_preset	execute	\N	mod_data	mod/data:manageuserpresets	\N
+413	mod_data_get_mapping_information	mod_data\\external\\get_mapping_information	execute	\N	mod_data	mod/data:managetemplates	\N
+414	mod_feedback_get_feedbacks_by_courses	mod_feedback_external	get_feedbacks_by_courses	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+415	mod_feedback_get_feedback_access_information	mod_feedback_external	get_feedback_access_information	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+416	mod_feedback_view_feedback	mod_feedback_external	view_feedback	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+417	mod_feedback_get_current_completed_tmp	mod_feedback_external	get_current_completed_tmp	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+418	mod_feedback_get_items	mod_feedback_external	get_items	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+419	mod_feedback_launch_feedback	mod_feedback_external	launch_feedback	\N	mod_feedback	mod/feedback:complete	moodle_mobile_app
+420	mod_feedback_get_page_items	mod_feedback_external	get_page_items	\N	mod_feedback	mod/feedback:complete	moodle_mobile_app
+421	mod_feedback_process_page	mod_feedback_external	process_page	\N	mod_feedback	mod/feedback:complete	moodle_mobile_app
+422	mod_feedback_get_analysis	mod_feedback_external	get_analysis	\N	mod_feedback	mod/feedback:viewanalysepage	moodle_mobile_app
+423	mod_feedback_get_unfinished_responses	mod_feedback_external	get_unfinished_responses	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+424	mod_feedback_get_finished_responses	mod_feedback_external	get_finished_responses	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+425	mod_feedback_get_non_respondents	mod_feedback_external	get_non_respondents	\N	mod_feedback	mod/feedback:viewreports	moodle_mobile_app
+426	mod_feedback_get_responses_analysis	mod_feedback_external	get_responses_analysis	\N	mod_feedback	mod/feedback:viewreports	moodle_mobile_app
+427	mod_feedback_get_last_completed	mod_feedback_external	get_last_completed	\N	mod_feedback	mod/feedback:view	moodle_mobile_app
+428	mod_folder_view_folder	mod_folder_external	view_folder	\N	mod_folder	mod/folder:view	moodle_mobile_app
+429	mod_folder_get_folders_by_courses	mod_folder_external	get_folders_by_courses	\N	mod_folder	mod/folder:view	moodle_mobile_app
+430	mod_forum_get_forums_by_courses	mod_forum_external	get_forums_by_courses	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion	moodle_mobile_app
+431	mod_forum_get_discussion_posts	mod_forum_external	get_discussion_posts	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	moodle_mobile_app
+432	mod_forum_get_forum_discussions_paginated	mod_forum_external	get_forum_discussions_paginated	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	moodle_mobile_app
+433	mod_forum_get_forum_discussions	mod_forum_external	get_forum_discussions	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	moodle_mobile_app
+434	mod_forum_view_forum	mod_forum_external	view_forum	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion	moodle_mobile_app
+435	mod_forum_view_forum_discussion	mod_forum_external	view_forum_discussion	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion	moodle_mobile_app
+436	mod_forum_add_discussion_post	mod_forum_external	add_discussion_post	mod/forum/externallib.php	mod_forum	mod/forum:replypost	moodle_mobile_app
+437	mod_forum_add_discussion	mod_forum_external	add_discussion	mod/forum/externallib.php	mod_forum	mod/forum:startdiscussion	moodle_mobile_app
+438	mod_forum_can_add_discussion	mod_forum_external	can_add_discussion	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+439	mod_forum_get_forum_access_information	mod_forum_external	get_forum_access_information	\N	mod_forum		moodle_mobile_app
+440	mod_forum_set_subscription_state	mod_forum_external	set_subscription_state	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+441	mod_forum_set_lock_state	mod_forum_external	set_lock_state	mod/forum/externallib.php	mod_forum	moodle/course:manageactivities	moodle_mobile_app
+442	mod_forum_toggle_favourite_state	mod_forum_external	toggle_favourite_state	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+443	mod_forum_set_pin_state	mod_forum_external	set_pin_state	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+444	mod_forum_delete_post	mod_forum_external	delete_post	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+445	mod_forum_get_discussion_posts_by_userid	mod_forum_external	get_discussion_posts_by_userid	mod/forum/externallib.php	mod_forum	mod/forum:viewdiscussion, mod/forum:viewqandawithoutposting	\N
+446	mod_forum_get_discussion_post	mod_forum_external	get_discussion_post	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+447	mod_forum_prepare_draft_area_for_post	mod_forum_external	prepare_draft_area_for_post	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+448	mod_forum_update_discussion_post	mod_forum_external	update_discussion_post	mod/forum/externallib.php	mod_forum		moodle_mobile_app
+449	mod_glossary_get_glossaries_by_courses	mod_glossary_external	get_glossaries_by_courses	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+450	mod_glossary_view_glossary	mod_glossary_external	view_glossary	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+451	mod_glossary_view_entry	mod_glossary_external	view_entry	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+452	mod_glossary_get_entries_by_letter	mod_glossary_external	get_entries_by_letter	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+453	mod_glossary_get_entries_by_date	mod_glossary_external	get_entries_by_date	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+454	mod_glossary_get_categories	mod_glossary_external	get_categories	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+455	mod_glossary_get_entries_by_category	mod_glossary_external	get_entries_by_category	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+456	mod_glossary_get_authors	mod_glossary_external	get_authors	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+457	mod_glossary_get_entries_by_author	mod_glossary_external	get_entries_by_author	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+458	mod_glossary_get_entries_by_author_id	mod_glossary_external	get_entries_by_author_id	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+459	mod_glossary_get_entries_by_search	mod_glossary_external	get_entries_by_search	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+460	mod_glossary_get_entries_by_term	mod_glossary_external	get_entries_by_term	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+461	mod_glossary_get_entries_to_approve	mod_glossary_external	get_entries_to_approve	\N	mod_glossary	mod/glossary:approve	moodle_mobile_app
+462	mod_glossary_get_entry_by_id	mod_glossary_external	get_entry_by_id	\N	mod_glossary	mod/glossary:view	moodle_mobile_app
+463	mod_glossary_add_entry	mod_glossary_external	add_entry	\N	mod_glossary	mod/glossary:write	moodle_mobile_app
+464	mod_glossary_delete_entry	mod_glossary\\external\\delete_entry	execute	\N	mod_glossary		moodle_mobile_app
+465	mod_glossary_update_entry	mod_glossary\\external\\update_entry	execute	\N	mod_glossary		moodle_mobile_app
+466	mod_glossary_prepare_entry_for_edition	mod_glossary\\external\\prepare_entry	execute	\N	mod_glossary		moodle_mobile_app
+467	mod_h5pactivity_get_h5pactivity_access_information	mod_h5pactivity\\external\\get_h5pactivity_access_information	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+468	mod_h5pactivity_view_h5pactivity	mod_h5pactivity\\external\\view_h5pactivity	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+469	mod_h5pactivity_get_attempts	mod_h5pactivity\\external\\get_attempts	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+470	mod_h5pactivity_get_results	mod_h5pactivity\\external\\get_results	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+471	mod_h5pactivity_get_h5pactivities_by_courses	mod_h5pactivity\\external\\get_h5pactivities_by_courses	execute	\N	mod_h5pactivity	mod/h5pactivity:view	moodle_mobile_app
+472	mod_h5pactivity_log_report_viewed	mod_h5pactivity\\external\\log_report_viewed	execute	\N	mod_h5pactivity		moodle_mobile_app
+473	mod_h5pactivity_get_user_attempts	mod_h5pactivity\\external\\get_user_attempts	execute	\N	mod_h5pactivity	mod/h5pactivity:reviewattempts	moodle_mobile_app
+474	mod_imscp_view_imscp	mod_imscp_external	view_imscp	\N	mod_imscp	mod/imscp:view	moodle_mobile_app
+475	mod_imscp_get_imscps_by_courses	mod_imscp_external	get_imscps_by_courses	\N	mod_imscp	mod/imscp:view	moodle_mobile_app
+476	mod_label_get_labels_by_courses	mod_label_external	get_labels_by_courses	\N	mod_label	mod/label:view	moodle_mobile_app
+477	mod_lesson_get_lessons_by_courses	mod_lesson_external	get_lessons_by_courses	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+478	mod_lesson_get_lesson_access_information	mod_lesson_external	get_lesson_access_information	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+479	mod_lesson_view_lesson	mod_lesson_external	view_lesson	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+480	mod_lesson_get_questions_attempts	mod_lesson_external	get_questions_attempts	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+481	mod_lesson_get_user_grade	mod_lesson_external	get_user_grade	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+482	mod_lesson_get_user_attempt_grade	mod_lesson_external	get_user_attempt_grade	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+483	mod_lesson_get_content_pages_viewed	mod_lesson_external	get_content_pages_viewed	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+484	mod_lesson_get_user_timers	mod_lesson_external	get_user_timers	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+485	mod_lesson_get_pages	mod_lesson_external	get_pages	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+486	mod_lesson_launch_attempt	mod_lesson_external	launch_attempt	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+487	mod_lesson_get_page_data	mod_lesson_external	get_page_data	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+488	mod_lesson_process_page	mod_lesson_external	process_page	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+489	mod_lesson_finish_attempt	mod_lesson_external	finish_attempt	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+490	mod_lesson_get_attempts_overview	mod_lesson_external	get_attempts_overview	\N	mod_lesson	mod/lesson:viewreports	moodle_mobile_app
+491	mod_lesson_get_user_attempt	mod_lesson_external	get_user_attempt	\N	mod_lesson	mod/lesson:viewreports	moodle_mobile_app
+492	mod_lesson_get_pages_possible_jumps	mod_lesson_external	get_pages_possible_jumps	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+493	mod_lesson_get_lesson	mod_lesson_external	get_lesson	\N	mod_lesson	mod/lesson:view	moodle_mobile_app
+494	mod_lti_get_tool_launch_data	mod_lti_external	get_tool_launch_data	\N	mod_lti	mod/lti:view	moodle_mobile_app
+495	mod_lti_get_ltis_by_courses	mod_lti_external	get_ltis_by_courses	\N	mod_lti	mod/lti:view	moodle_mobile_app
+496	mod_lti_view_lti	mod_lti_external	view_lti	\N	mod_lti	mod/lti:view	moodle_mobile_app
+497	mod_lti_get_tool_proxies	mod_lti_external	get_tool_proxies	\N	mod_lti	moodle/site:config	\N
+498	mod_lti_create_tool_proxy	mod_lti_external	create_tool_proxy	\N	mod_lti	moodle/site:config	\N
+499	mod_lti_delete_tool_proxy	mod_lti_external	delete_tool_proxy	\N	mod_lti	moodle/site:config	\N
+500	mod_lti_get_tool_proxy_registration_request	mod_lti_external	get_tool_proxy_registration_request	\N	mod_lti	moodle/site:config	\N
+501	mod_lti_get_tool_types	mod_lti_external	get_tool_types	\N	mod_lti	moodle/site:config	\N
+502	mod_lti_get_tool_types_and_proxies	mod_lti\\external\\get_tool_types_and_proxies	execute	\N	mod_lti	moodle/site:config	\N
+503	mod_lti_get_tool_types_and_proxies_count	mod_lti\\external\\get_tool_types_and_proxies_count	execute	\N	mod_lti	moodle/site:config	\N
+504	mod_lti_create_tool_type	mod_lti_external	create_tool_type	\N	mod_lti	moodle/site:config	\N
+505	mod_lti_update_tool_type	mod_lti_external	update_tool_type	\N	mod_lti	moodle/site:config	\N
+506	mod_lti_delete_tool_type	mod_lti_external	delete_tool_type	\N	mod_lti	moodle/site:config	\N
+507	mod_lti_is_cartridge	mod_lti_external	is_cartridge	\N	mod_lti	moodle/site:config	\N
+508	mod_page_view_page	mod_page_external	view_page	\N	mod_page	mod/page:view	moodle_mobile_app
+509	mod_page_get_pages_by_courses	mod_page_external	get_pages_by_courses	\N	mod_page	mod/page:view	moodle_mobile_app
+510	mod_quiz_get_quizzes_by_courses	mod_quiz_external	get_quizzes_by_courses	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+511	mod_quiz_view_quiz	mod_quiz_external	view_quiz	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+512	mod_quiz_get_user_attempts	mod_quiz_external	get_user_attempts	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+513	mod_quiz_get_user_best_grade	mod_quiz_external	get_user_best_grade	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+514	mod_quiz_get_combined_review_options	mod_quiz_external	get_combined_review_options	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+515	mod_quiz_start_attempt	mod_quiz_external	start_attempt	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+516	mod_quiz_get_attempt_data	mod_quiz_external	get_attempt_data	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+517	mod_quiz_get_attempt_summary	mod_quiz_external	get_attempt_summary	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+518	mod_quiz_save_attempt	mod_quiz_external	save_attempt	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+519	mod_quiz_process_attempt	mod_quiz_external	process_attempt	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+520	mod_quiz_get_attempt_review	mod_quiz_external	get_attempt_review	\N	mod_quiz	mod/quiz:reviewmyattempts	moodle_mobile_app
+521	mod_quiz_view_attempt	mod_quiz_external	view_attempt	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+522	mod_quiz_view_attempt_summary	mod_quiz_external	view_attempt_summary	\N	mod_quiz	mod/quiz:attempt	moodle_mobile_app
+523	mod_quiz_view_attempt_review	mod_quiz_external	view_attempt_review	\N	mod_quiz	mod/quiz:reviewmyattempts	moodle_mobile_app
+524	mod_quiz_get_quiz_feedback_for_grade	mod_quiz_external	get_quiz_feedback_for_grade	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+525	mod_quiz_get_quiz_access_information	mod_quiz_external	get_quiz_access_information	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+526	mod_quiz_get_attempt_access_information	mod_quiz_external	get_attempt_access_information	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+527	mod_quiz_get_quiz_required_qtypes	mod_quiz_external	get_quiz_required_qtypes	\N	mod_quiz	mod/quiz:view	moodle_mobile_app
+528	mod_quiz_set_question_version	mod_quiz\\external\\submit_question_version	execute	\N	mod_quiz	mod/quiz:view	\N
+529	mod_resource_view_resource	mod_resource_external	view_resource	\N	mod_resource	mod/resource:view	moodle_mobile_app
+530	mod_resource_get_resources_by_courses	mod_resource_external	get_resources_by_courses	\N	mod_resource	mod/resource:view	moodle_mobile_app
+531	mod_scorm_view_scorm	mod_scorm_external	view_scorm	\N	mod_scorm		moodle_mobile_app
+532	mod_scorm_get_scorm_attempt_count	mod_scorm_external	get_scorm_attempt_count	\N	mod_scorm		moodle_mobile_app
+533	mod_scorm_get_scorm_scoes	mod_scorm_external	get_scorm_scoes	\N	mod_scorm		moodle_mobile_app
+534	mod_scorm_get_scorm_user_data	mod_scorm_external	get_scorm_user_data	\N	mod_scorm		moodle_mobile_app
+535	mod_scorm_insert_scorm_tracks	mod_scorm_external	insert_scorm_tracks	\N	mod_scorm	mod/scorm:savetrack	moodle_mobile_app
+536	mod_scorm_get_scorm_sco_tracks	mod_scorm_external	get_scorm_sco_tracks	\N	mod_scorm		moodle_mobile_app
+537	mod_scorm_get_scorms_by_courses	mod_scorm_external	get_scorms_by_courses	\N	mod_scorm		moodle_mobile_app
+538	mod_scorm_launch_sco	mod_scorm_external	launch_sco	\N	mod_scorm		moodle_mobile_app
+539	mod_scorm_get_scorm_access_information	mod_scorm_external	get_scorm_access_information	\N	mod_scorm		moodle_mobile_app
+540	mod_survey_get_surveys_by_courses	mod_survey_external	get_surveys_by_courses	\N	mod_survey		moodle_mobile_app
+541	mod_survey_view_survey	mod_survey_external	view_survey	\N	mod_survey	mod/survey:participate	moodle_mobile_app
+542	mod_survey_get_questions	mod_survey_external	get_questions	\N	mod_survey	mod/survey:participate	moodle_mobile_app
+543	mod_survey_submit_answers	mod_survey_external	submit_answers	\N	mod_survey	mod/survey:participate	moodle_mobile_app
+544	mod_url_view_url	mod_url_external	view_url	\N	mod_url	mod/url:view	moodle_mobile_app
+545	mod_url_get_urls_by_courses	mod_url_external	get_urls_by_courses	\N	mod_url	mod/url:view	moodle_mobile_app
+546	mod_wiki_get_wikis_by_courses	mod_wiki_external	get_wikis_by_courses	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+547	mod_wiki_view_wiki	mod_wiki_external	view_wiki	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+548	mod_wiki_view_page	mod_wiki_external	view_page	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+549	mod_wiki_get_subwikis	mod_wiki_external	get_subwikis	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+550	mod_wiki_get_subwiki_pages	mod_wiki_external	get_subwiki_pages	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+551	mod_wiki_get_subwiki_files	mod_wiki_external	get_subwiki_files	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+552	mod_wiki_get_page_contents	mod_wiki_external	get_page_contents	\N	mod_wiki	mod/wiki:viewpage	moodle_mobile_app
+553	mod_wiki_get_page_for_editing	mod_wiki_external	get_page_for_editing	\N	mod_wiki	mod/wiki:editpage	moodle_mobile_app
+554	mod_wiki_new_page	mod_wiki_external	new_page	\N	mod_wiki	mod/wiki:editpage	moodle_mobile_app
+555	mod_wiki_edit_page	mod_wiki_external	edit_page	\N	mod_wiki	mod/wiki:editpage	moodle_mobile_app
+556	mod_workshop_get_workshops_by_courses	mod_workshop_external	get_workshops_by_courses	\N	mod_workshop	mod/workshop:view	moodle_mobile_app
+557	mod_workshop_get_workshop_access_information	mod_workshop_external	get_workshop_access_information	\N	mod_workshop	mod/workshop:view	moodle_mobile_app
+558	mod_workshop_get_user_plan	mod_workshop_external	get_user_plan	\N	mod_workshop	mod/workshop:view	moodle_mobile_app
+559	mod_workshop_view_workshop	mod_workshop_external	view_workshop	\N	mod_workshop	mod/workshop:view	moodle_mobile_app
+560	mod_workshop_add_submission	mod_workshop_external	add_submission	\N	mod_workshop	mod/workshop:submit	moodle_mobile_app
+561	mod_workshop_update_submission	mod_workshop_external	update_submission	\N	mod_workshop	mod/workshop:submit	moodle_mobile_app
+562	mod_workshop_delete_submission	mod_workshop_external	delete_submission	\N	mod_workshop	mod/workshop:submit	moodle_mobile_app
+563	mod_workshop_get_submissions	mod_workshop_external	get_submissions	\N	mod_workshop		moodle_mobile_app
+564	mod_workshop_get_submission	mod_workshop_external	get_submission	\N	mod_workshop		moodle_mobile_app
+565	mod_workshop_get_submission_assessments	mod_workshop_external	get_submission_assessments	\N	mod_workshop		moodle_mobile_app
+566	mod_workshop_get_assessment	mod_workshop_external	get_assessment	\N	mod_workshop		moodle_mobile_app
+567	mod_workshop_get_assessment_form_definition	mod_workshop_external	get_assessment_form_definition	\N	mod_workshop		moodle_mobile_app
+568	mod_workshop_get_reviewer_assessments	mod_workshop_external	get_reviewer_assessments	\N	mod_workshop		moodle_mobile_app
+569	mod_workshop_update_assessment	mod_workshop_external	update_assessment	\N	mod_workshop		moodle_mobile_app
+570	mod_workshop_get_grades	mod_workshop_external	get_grades	\N	mod_workshop		moodle_mobile_app
+571	mod_workshop_evaluate_assessment	mod_workshop_external	evaluate_assessment	\N	mod_workshop		moodle_mobile_app
+572	mod_workshop_get_grades_report	mod_workshop_external	get_grades_report	\N	mod_workshop		moodle_mobile_app
+573	mod_workshop_view_submission	mod_workshop_external	view_submission	\N	mod_workshop	mod/workshop:view	moodle_mobile_app
+574	mod_workshop_evaluate_submission	mod_workshop_external	evaluate_submission	\N	mod_workshop		moodle_mobile_app
+575	auth_email_get_signup_settings	auth_email_external	get_signup_settings	\N	auth_email		\N
+576	auth_email_signup_user	auth_email_external	signup_user	\N	auth_email		\N
+577	enrol_guest_get_instance_info	enrol_guest_external	get_instance_info	\N	enrol_guest		moodle_mobile_app
+578	enrol_manual_enrol_users	enrol_manual_external	enrol_users	enrol/manual/externallib.php	enrol_manual	enrol/manual:enrol	\N
+579	enrol_manual_unenrol_users	enrol_manual_external	unenrol_users	enrol/manual/externallib.php	enrol_manual	enrol/manual:unenrol	\N
+580	enrol_meta_add_instances	enrol_meta\\external\\add_instances	execute	\N	enrol_meta	enrol/meta:config	\N
+581	enrol_meta_delete_instances	enrol_meta\\external\\delete_instances	execute	\N	enrol_meta	enrol/meta:config	\N
+582	enrol_self_get_instance_info	enrol_self_external	get_instance_info	enrol/self/externallib.php	enrol_self		moodle_mobile_app
+583	enrol_self_enrol_user	enrol_self_external	enrol_user	enrol/self/externallib.php	enrol_self		moodle_mobile_app
+584	message_airnotifier_is_system_configured	message_airnotifier_external	is_system_configured	message/output/airnotifier/externallib.php	message_airnotifier		moodle_mobile_app
+585	message_airnotifier_are_notification_preferences_configured	message_airnotifier_external	are_notification_preferences_configured	message/output/airnotifier/externallib.php	message_airnotifier		moodle_mobile_app
+586	message_airnotifier_get_user_devices	message_airnotifier_external	get_user_devices	message/output/airnotifier/externallib.php	message_airnotifier		moodle_mobile_app
+587	message_airnotifier_enable_device	message_airnotifier_external	enable_device	message/output/airnotifier/externallib.php	message_airnotifier	message/airnotifier:managedevice	moodle_mobile_app
+588	message_popup_get_popup_notifications	message_popup_external	get_popup_notifications	message/output/popup/externallib.php	message_popup		moodle_mobile_app
+589	message_popup_get_unread_popup_notification_count	message_popup_external	get_unread_popup_notification_count	message/output/popup/externallib.php	message_popup		moodle_mobile_app
+590	block_accessreview_get_module_data	block_accessreview\\external\\get_module_data	execute	\N	block_accessreview	block/accessreview:view	\N
+591	block_accessreview_get_section_data	block_accessreview\\external\\get_section_data	execute	\N	block_accessreview	block/accessreview:view	\N
+592	block_recentlyaccesseditems_get_recent_items	block_recentlyaccesseditems\\external	get_recent_items	\N	block_recentlyaccesseditems		moodle_mobile_app
+593	block_starredcourses_get_starred_courses	block_starredcourses_external	get_starred_courses	block/starredcourses/classes/external.php	block_starredcourses		moodle_mobile_app
+594	media_videojs_get_language	media_videojs\\external\\get_language	execute	\N	media_videojs		\N
+595	report_competency_data_for_report	report_competency\\external	data_for_report	\N	report_competency	moodle/competency:coursecompetencyview	\N
+596	report_insights_set_notuseful_prediction	report_insights\\external	set_notuseful_prediction	\N	report_insights		moodle_mobile_app
+597	report_insights_set_fixed_prediction	report_insights\\external	set_fixed_prediction	\N	report_insights		moodle_mobile_app
+598	report_insights_action_executed	report_insights\\external	action_executed	\N	report_insights		moodle_mobile_app
+599	gradereport_overview_get_course_grades	gradereport_overview_external	get_course_grades	\N	gradereport_overview		moodle_mobile_app
+600	gradereport_overview_view_grade_report	gradereport_overview_external	view_grade_report	\N	gradereport_overview	gradereport/overview:view	moodle_mobile_app
+601	gradereport_singleview_get_grade_items_for_search_widget	gradereport_singleview\\external\\singleview	get_grade_items_for_search_widget	\N	gradereport_singleview	gradereport/singleview:view	moodle_mobile_app
+602	gradereport_user_get_grades_table	gradereport_user\\external\\user	get_grades_table	\N	gradereport_user	gradereport/user:view	moodle_mobile_app
+603	gradereport_user_view_grade_report	gradereport_user\\external\\user	view_grade_report	\N	gradereport_user	gradereport/user:view	moodle_mobile_app
+604	gradereport_user_get_grade_items	gradereport_user\\external\\user	get_grade_items	\N	gradereport_user	gradereport/user:view	moodle_mobile_app
+605	gradingform_guide_grader_gradingpanel_fetch	gradingform_guide\\grades\\grader\\gradingpanel\\external\\fetch	execute	\N	gradingform_guide		\N
+606	gradingform_guide_grader_gradingpanel_store	gradingform_guide\\grades\\grader\\gradingpanel\\external\\store	execute	\N	gradingform_guide		\N
+607	gradingform_rubric_grader_gradingpanel_fetch	gradingform_rubric\\grades\\grader\\gradingpanel\\external\\fetch	execute	\N	gradingform_rubric		\N
+608	gradingform_rubric_grader_gradingpanel_store	gradingform_rubric\\grades\\grader\\gradingpanel\\external\\store	execute	\N	gradingform_rubric		\N
+609	qbank_columnsortorder_set_columnbank_order	qbank_columnsortorder\\external\\set_columnbank_order	execute	\N	qbank_columnsortorder		\N
+610	qbank_editquestion_set_status	qbank_editquestion\\external\\update_question_version_status	execute	\N	qbank_editquestion		\N
+611	qbank_tagquestion_submit_tags_form	qbank_tagquestion\\external\\submit_tags	execute	\N	qbank_tagquestion		\N
+612	tool_analytics_potential_contexts	tool_analytics\\external	potential_contexts	\N	tool_analytics		moodle_mobile_app
+613	tool_behat_get_entity_generator	tool_behat\\external\\get_entity_generator	execute	\N	tool_behat	moodle/site:config	\N
+614	tool_dataprivacy_cancel_data_request	tool_dataprivacy\\external	cancel_data_request	\N	tool_dataprivacy		\N
+615	tool_dataprivacy_contact_dpo	tool_dataprivacy\\external	contact_dpo	\N	tool_dataprivacy		\N
+616	tool_dataprivacy_mark_complete	tool_dataprivacy\\external	mark_complete	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+617	tool_dataprivacy_get_data_request	tool_dataprivacy\\external	get_data_request	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+618	tool_dataprivacy_approve_data_request	tool_dataprivacy\\external	approve_data_request	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+619	tool_dataprivacy_bulk_approve_data_requests	tool_dataprivacy\\external	bulk_approve_data_requests	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+620	tool_dataprivacy_deny_data_request	tool_dataprivacy\\external	deny_data_request	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+621	tool_dataprivacy_bulk_deny_data_requests	tool_dataprivacy\\external	bulk_deny_data_requests	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+622	tool_dataprivacy_get_users	tool_dataprivacy\\external	get_users	\N	tool_dataprivacy	tool/dataprivacy:managedatarequests	\N
+623	tool_dataprivacy_create_purpose_form	tool_dataprivacy\\external	create_purpose_form	\N	tool_dataprivacy		\N
+624	tool_dataprivacy_create_category_form	tool_dataprivacy\\external	create_category_form	\N	tool_dataprivacy		\N
+625	tool_dataprivacy_delete_purpose	tool_dataprivacy\\external	delete_purpose	\N	tool_dataprivacy		\N
+626	tool_dataprivacy_delete_category	tool_dataprivacy\\external	delete_category	\N	tool_dataprivacy		\N
+627	tool_dataprivacy_set_contextlevel_form	tool_dataprivacy\\external	set_contextlevel_form	\N	tool_dataprivacy		\N
+628	tool_dataprivacy_set_context_form	tool_dataprivacy\\external	set_context_form	\N	tool_dataprivacy		\N
+629	tool_dataprivacy_tree_extra_branches	tool_dataprivacy\\external	tree_extra_branches	\N	tool_dataprivacy		\N
+630	tool_dataprivacy_confirm_contexts_for_deletion	tool_dataprivacy\\external	confirm_contexts_for_deletion	\N	tool_dataprivacy		\N
+631	tool_dataprivacy_set_context_defaults	tool_dataprivacy\\external	set_context_defaults	\N	tool_dataprivacy	tool/dataprivacy:managedataregistry	\N
+632	tool_dataprivacy_get_category_options	tool_dataprivacy\\external	get_category_options	\N	tool_dataprivacy	tool/dataprivacy:managedataregistry	\N
+633	tool_dataprivacy_get_purpose_options	tool_dataprivacy\\external	get_purpose_options	\N	tool_dataprivacy	tool/dataprivacy:managedataregistry	\N
+634	tool_dataprivacy_get_activity_options	tool_dataprivacy\\external	get_activity_options	\N	tool_dataprivacy	tool/dataprivacy:managedataregistry	\N
+635	tool_lp_data_for_competency_frameworks_manage_page	tool_lp\\external	data_for_competency_frameworks_manage_page	\N	tool_lp	moodle/competency:competencyview	\N
+636	tool_lp_data_for_competency_summary	tool_lp\\external	data_for_competency_summary	\N	tool_lp	moodle/competency:competencyview	\N
+637	tool_lp_data_for_competencies_manage_page	tool_lp\\external	data_for_competencies_manage_page	\N	tool_lp	moodle/competency:competencyview	\N
+638	tool_lp_list_courses_using_competency	tool_lp\\external	list_courses_using_competency	\N	tool_lp	moodle/competency:coursecompetencyview	\N
+639	tool_lp_data_for_course_competencies_page	tool_lp\\external	data_for_course_competencies_page	\N	tool_lp	moodle/competency:coursecompetencyview	moodle_mobile_app
+640	tool_lp_data_for_template_competencies_page	tool_lp\\external	data_for_template_competencies_page	\N	tool_lp	moodle/competency:templateview	\N
+641	tool_lp_data_for_templates_manage_page	tool_lp\\external	data_for_templates_manage_page	\N	tool_lp	moodle/competency:templateview	\N
+642	tool_lp_data_for_plans_page	tool_lp\\external	data_for_plans_page	\N	tool_lp	moodle/competency:planviewown	moodle_mobile_app
+643	tool_lp_data_for_plan_page	tool_lp\\external	data_for_plan_page	\N	tool_lp	moodle/competency:planview	moodle_mobile_app
+644	tool_lp_data_for_related_competencies_section	tool_lp\\external	data_for_related_competencies_section	\N	tool_lp	moodle/competency:competencyview	\N
+645	tool_lp_search_users	tool_lp\\external	search_users	\N	tool_lp		\N
+646	tool_lp_search_cohorts	core_cohort_external	search_cohorts	cohort/externallib.php	tool_lp	moodle/cohort:view	\N
+647	tool_lp_data_for_user_evidence_list_page	tool_lp\\external	data_for_user_evidence_list_page	\N	tool_lp	moodle/competency:userevidenceview	moodle_mobile_app
+648	tool_lp_data_for_user_evidence_page	tool_lp\\external	data_for_user_evidence_page	\N	tool_lp	moodle/competency:userevidenceview	moodle_mobile_app
+649	tool_lp_data_for_user_competency_summary	tool_lp\\external	data_for_user_competency_summary	\N	tool_lp	moodle/competency:planview	moodle_mobile_app
+650	tool_lp_data_for_user_competency_summary_in_plan	tool_lp\\external	data_for_user_competency_summary_in_plan	\N	tool_lp	moodle/competency:planview	moodle_mobile_app
+651	tool_lp_data_for_user_competency_summary_in_course	tool_lp\\external	data_for_user_competency_summary_in_course	\N	tool_lp	moodle/competency:coursecompetencyview	moodle_mobile_app
+652	tool_mobile_get_plugins_supporting_mobile	tool_mobile\\external	get_plugins_supporting_mobile	\N	tool_mobile		moodle_mobile_app
+653	tool_mobile_get_public_config	tool_mobile\\external	get_public_config	\N	tool_mobile		moodle_mobile_app
+654	tool_mobile_get_config	tool_mobile\\external	get_config	\N	tool_mobile		moodle_mobile_app
+655	tool_mobile_get_autologin_key	tool_mobile\\external	get_autologin_key	\N	tool_mobile		moodle_mobile_app
+656	tool_mobile_get_content	tool_mobile\\external	get_content	\N	tool_mobile		moodle_mobile_app
+657	tool_mobile_call_external_functions	tool_mobile\\external	call_external_functions	\N	tool_mobile		moodle_mobile_app
+658	tool_mobile_validate_subscription_key	tool_mobile\\external	validate_subscription_key	\N	tool_mobile		moodle_mobile_app
+659	tool_mobile_get_tokens_for_qr_login	tool_mobile\\external	get_tokens_for_qr_login	\N	tool_mobile		moodle_mobile_app
+660	tool_moodlenet_verify_webfinger	tool_moodlenet\\external	verify_webfinger	\N	tool_moodlenet		moodle_mobile_app
+661	tool_moodlenet_search_courses	tool_moodlenet\\external	search_courses	\N	tool_moodlenet		moodle_mobile_app
+662	tool_policy_get_policy_version	tool_policy\\external	get_policy_version	\N	tool_policy		\N
+663	tool_policy_submit_accept_on_behalf	tool_policy\\external	submit_accept_on_behalf	\N	tool_policy		\N
+664	tool_templatelibrary_list_templates	tool_templatelibrary\\external	list_templates	\N	tool_templatelibrary		\N
+665	tool_templatelibrary_load_canonical_template	tool_templatelibrary\\external	load_canonical_template	\N	tool_templatelibrary		\N
+666	tool_usertours_fetch_and_start_tour	tool_usertours\\external\\tour	fetch_and_start_tour	\N	tool_usertours		\N
+667	tool_usertours_step_shown	tool_usertours\\external\\tour	step_shown	\N	tool_usertours		\N
+668	tool_usertours_complete_tour	tool_usertours\\external\\tour	complete_tour	\N	tool_usertours		\N
+669	tool_usertours_reset_tour	tool_usertours\\external\\tour	reset_tour	\N	tool_usertours		\N
+670	tool_xmldb_invoke_move_action	tool_xmldb_external	invoke_move_action	\N	tool_xmldb		\N
+671	paygw_paypal_get_config_for_js	paygw_paypal\\external\\get_config_for_js	execute	\N	paygw_paypal		\N
+672	paygw_paypal_create_transaction_complete	paygw_paypal\\external\\transaction_complete	execute	\N	paygw_paypal		\N
+673	quizaccess_seb_validate_quiz_keys	quizaccess_seb\\external\\validate_quiz_keys	execute	\N	quizaccess_seb		\N
+674	tiny_autosave_resume_session	tiny_autosave\\external\\resume_autosave_session	execute	\N	tiny_autosave		\N
+675	tiny_autosave_reset_session	tiny_autosave\\external\\reset_autosave_session	execute	\N	tiny_autosave		\N
+676	tiny_autosave_update_session	tiny_autosave\\external\\update_autosave_session_content	execute	\N	tiny_autosave		\N
+677	tiny_equation_filter	tiny_equation\\external\\filter	execute	\N	tiny_equation		\N
+678	theme_bluelms_fontsize	theme_bluelms\\api\\accessibility	fontsize	theme_bluelms/classes/api/accessibility.php	theme_bluelms		\N
+679	theme_bluelms_sitecolor	theme_bluelms\\api\\accessibility	sitecolor	\N	theme_bluelms		\N
+680	theme_bluelms_savethemesettings	theme_bluelms\\api\\accessibility	savethemesettings	\N	theme_bluelms		\N
+681	theme_bluelms_getthemesettings	theme_bluelms\\api\\accessibility	getthemesettings	\N	theme_bluelms		\N

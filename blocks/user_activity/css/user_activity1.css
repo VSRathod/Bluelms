@@ -1,0 +1,164 @@
+	.block .content .userpicture{
+    height: inherit;
+    width: inherit;
+}
+.myteamblock .cell{
+    vertical-align:middle !important;
+}
+.progress,
+.table{
+    margin: 0 !important;
+}
+div.progress{
+	cursor:pointer;
+}
+
+#user_activity-legend{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+/*.legend_pie {
+    font-size: 11px;
+    margin-top: 15px;
+    position: absolute;
+    width: 100%;
+    margin-left: -13px;
+    text-align: center;
+}*/
+
+#user_activity-legend a{
+	display:block;
+	text-align:center;
+}
+
+
+.block_user_activity .end-block {
+    display: none !important;
+}
+
+.block_user_activity h2{    
+    color: gray;
+}
+
+.block_user_activity h2:before {
+    content: "\f015";
+    font: normal normal normal 14px/1 PlmsWidgets;
+}
+
+.block_user_activity{
+/*    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 4px rgba(0, 0, 0, 0.1) inset !important;*/
+    background: #fff;
+}
+
+.block_user_activity div.header div.title{
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    width: 98%;
+    margin-left: 12px;
+    padding: 1px 0 10px 0;
+}
+
+#page-course-view-paradisotabs #region-main-wrap .region-content .block_user_activity .header .title h2:before {
+    top: 34px;
+}
+
+.right-column .block_user_activity .content .container-content {
+    padding-left: 9px !important;
+}
+
+#user_activity-legend .legend_bars {
+    height: 15px !important;
+}
+
+.block_user_activity div.card-text.content{
+    position: relative;
+}
+
+#plms-my-progress-container div.highcharts-container{
+    text-align: center !important;
+    width: 100% !important;
+}
+
+div#user_activity-legend a{
+    /*width: 12%;
+    display: inline-block;
+    height: 12px;*/
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.block_user_activity section.blocks-column div#user_activity-legend{
+    position: absolute;
+    bottom: 20px;
+}
+
+section.has-blocks div#user_activity-legend{
+    margin: 0px;
+    text-align: center;
+}
+
+section.has-blocks div#user_activity-legend div.contend-legend{
+    width: 25%;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section.has-blocks div#user_activity-legend div.contend-legend a{
+    width: 100%;
+}
+
+.block_user_activity div#user_activity-legend div.contend-legend{
+    display: flex;
+    align-items: center;
+}
+
+.block_user_activity div.legend_pie{
+    padding-left: 12px;
+}
+
+@media (max-width: 544px){
+    section.has-blocks div#user_activity-legend div.contend-legend{
+        width: 50%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .block_user_activity .card-block {
+        overflow-y: hidden !important;
+        overflow-x: hidden !important;
+    }
+    .block_user_activity #plms-my-progress-container {
+        margin-top: -2rem !important;
+    }
+    .block_user_activity .table-responsive {
+        margin-top: 2rem !important;
+    }
+}
+.table td {
+    padding: 0px;
+}
+.block_user_activity .table > tbody > tr > td {
+    padding: 3px !important;
+    border-radius: 10px !important ;
+    background: red !important;
+}
+.block_user_activity .table-responsive {
+    margin-top: 3rem;
+    margin-left: -4px;
+}
+.block_user_activity #plms-my-progress-container {
+    width:100%; 
+    height:170px; 
+    margin-top: -2rem;
+}
+.block_user_activity .small_circle {
+height: 10px;
+width: 10px;
+border-radius: 50%;
+display: inline-block;
+}
+div#plms-my-progress-container {
+    margin-bottom: -10px;
+}

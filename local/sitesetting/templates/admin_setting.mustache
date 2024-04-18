@@ -1,0 +1,226 @@
+<form method="POST" id="setting" action="{{data.actionurl}}">
+  
+  <div class="mb-3">
+    <!-- Removed select role label and dropdown -->
+  </div>
+    
+  <ul class="nav nav-tabs" role="tablist">
+    <!-- First the top most node and immediate children -->
+    <li class="nav-item">
+      <a class="nav-link active" href="#link{{node.key}}" data-toggle="tab" role="tab">{{node.text}}</a>
+    </li>
+      
+    <!-- Now the first level children with sub nodes -->
+    {{#node.children}}
+      {{#children.count}}
+        {{#display}}
+          {{^is_short_branch}}
+            <li class="nav-item">
+              <a class="nav-link" href="#link{{key}}" data-toggle="tab" role="tab">{{text}}</a>
+            </li>
+          {{/is_short_branch}}
+        {{/display}}
+      {{/children.count}} 
+    {{/node.children}}
+  </ul>
+
+  <div>
+    <input type="hidden" name="sesskey" value="{{data.sesskey}}">
+    <input type="hidden" name="action" value="save-sitesetting">
+  </div>
+
+  <div class="container">
+
+    <div class="tab-content">
+        
+      <div class="tab-pane active" id="link{{node.key}}" role="tabpanel">
+
+        <div id="accordion{{node.key}}">
+              
+          <div class="card">
+              
+            <div class="card-header">
+              <h4 class="mb-0">
+                <button type="button" class="btn btn-link text-info" data-toggle="collapse" data-target="#{{#str}}general, theme_paradiso{{/str}}" aria-expanded="true" aria-controls="{{#str}}general, theme_paradiso{{/str}}">
+                  {{#str}}general, theme_paradiso{{/str}}
+                </button>
+              </h4>
+            </div>
+
+            <div id="{{#str}}general, theme_paradiso{{/str}}" class="collapse" aria-labelledby="generalHeader">
+              <div class="card-body">
+                    
+                <div class="ml-5">
+                  <!-- Render submenus and their children -->
+                  {{#node.children}}
+                    {{^children.count}}
+                      {{#display}}
+                        <div>
+                          <a href="{{url}}">{{text}}</a>
+                        </div>
+                      {{/display}}
+                    {{/children.count}}
+                  {{/node.children}}  
+                            
+                </div>
+
+              </div>
+            
+            </div>
+
+          </div>
+            
+          {{#node.children}}
+            {{#display}}
+              {{#children.count}}
+                {{#is_short_branch}}
+                      
+                  <div class="card">
+        
+                    <div class="card-header">
+                      <h4 class="mb-0">
+
+                        <button type="button" class="btn btn-link text-info" data-toggle="collapse" data-target="#{{key}}" aria-expanded="true" aria-controls="{{key}}">
+                          {{text}}
+                        </button>
+
+                          </h4>
+        
+                    </div>
+
+                    <div id="{{key}}" class="collapse">
+                      <div class="card-body">
+                    
+                        <div class="ml-5">
+                          <!-- Render submenus and their children -->
+                          {{#children}}            
+                            {{#display}}
+                              
+                                <div>
+                                  <a href="{{url}}">{{text}}</a>
+                                </div>
+                                  
+                            {{/display}}
+                          {{/children}}
+                        
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                {{/is_short_branch}}
+              {{/children.count}}
+            {{/display}}
+          {{/node.children}}
+        
+        </div>
+
+      </div>
+
+      {{#node.children}}
+        {{#children.count}}
+          <div class="tab-pane" id="link{{key}}" role="tabpanel">
+              
+            <div id="accordion{{key}}">
+        
+              <div class="card">
+                  
+                <div class="card-header">
+                  <h4 class="mb-0">
+
+                    <button type="button" class="btn btn-link text-info" data-toggle="collapse" data-target="#{{key}}" aria-expanded="true" aria-controls="{{key}}">
+                      {{text}}
+                    </button>
+
+                  </h4>
+                  
+                </div>
+
+                <div id="{{key}}" class="collapse">
+                  <div class="card-body">
+                        
+                    <div class="ml-5">
+                      <!-- Render submenus and their children -->
+                      {{#children}}
+                        {{#display}}
+                          {{^children.count}}
+                                      
+                            <div>
+                              <a href="{{url}}">{{text}}</a>
+                            </div>
+                          {{/children.count}}
+                        {{/display}}
+                      {{/children}}
+                                
+                    </div>
+
+                  </div>
+                
+                </div>
+
+              </div>
+
+
+              {{#children}}
+                {{#display}}
+                    {{#children.count}}
+                      
+                      <div class="card">
+                  
+                        <div class="card-header">
+                          <h4 class="mb-0">
+
+                            <button type="button" class="btn btn-link text-info" data-toggle="collapse" data-target="#{{key}}" aria-expanded="true" aria-controls="{{key}}">
+                              {{text}}
+                            </button>
+
+                          </h4>
+                          
+                        </div>
+
+                        <div id="{{key}}" class="collapse">
+                          <div class="card-body">
+                                
+                            <div class="ml-5">
+                              <!-- Render submenus and their children -->
+                              {{#children}}
+                                {{#display}}
+                                  {{^children.count}}
+                                              
+                                    <div>
+                                      <a href="{{url}}">{{text}}</a>
+                                    </div>
+                                  {{/children.count}}
+                                {{/display}}
+                              {{/children}}
+                                        
+                            </div>
+
+                          </div>
+                        
+                        </div>
+
+                    </div>               
+
+                  {{/children.count}}  
+                {{/display}}
+            {{/children}}
+
+
+            </div>
+          </div>
+
+        {{/children.count}}
+      {{/node.children}}
+            
+    </div>
+
+    <div class="text-center mt-3">
+      <button type="submit" id="save" class="btn btn-round btn-primary" disabled>Save settings</button>
+    </div>
+
+  </div>
+
+</form>

@@ -1,0 +1,20 @@
+CREATE TABLE `mdl_enrol_lti_resource_link` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `resourcelinkid` varchar(255) NOT NULL DEFAULT '',
+  `ltideploymentid` bigint(10) NOT NULL,
+  `resourceid` bigint(10) NOT NULL,
+  `lticontextid` bigint(10) DEFAULT NULL,
+  `lineitemsservice` varchar(1333) DEFAULT NULL,
+  `lineitemservice` varchar(1333) DEFAULT NULL,
+  `lineitemscope` varchar(255) DEFAULT NULL,
+  `resultscope` varchar(255) DEFAULT NULL,
+  `scorescope` varchar(255) DEFAULT NULL,
+  `contextmembershipsurl` varchar(1333) DEFAULT NULL,
+  `nrpsserviceversions` varchar(255) DEFAULT NULL,
+  `timecreated` bigint(10) NOT NULL,
+  `timemodified` bigint(10) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_enroltiresolink_reslti_uix` (`resourcelinkid`,`ltideploymentid`),
+  KEY `mdl_enroltiresolink_lti_ix` (`ltideploymentid`),
+  KEY `mdl_enroltiresolink_lti2_ix` (`lticontextid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='Each row represents a resource link for a platform and deplo'

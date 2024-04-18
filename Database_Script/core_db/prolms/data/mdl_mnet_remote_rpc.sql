@@ -1,0 +1,16 @@
+1	user_authorise	auth/mnet/auth.php/user_authorise	auth	mnet	1
+2	keepalive_server	auth/mnet/auth.php/keepalive_server	auth	mnet	1
+3	kill_children	auth/mnet/auth.php/kill_children	auth	mnet	1
+4	refresh_log	auth/mnet/auth.php/refresh_log	auth	mnet	1
+5	fetch_user_image	auth/mnet/auth.php/fetch_user_image	auth	mnet	1
+6	fetch_theme_info	auth/mnet/auth.php/fetch_theme_info	auth	mnet	1
+7	update_enrolments	auth/mnet/auth.php/update_enrolments	auth	mnet	1
+8	keepalive_client	auth/mnet/auth.php/keepalive_client	auth	mnet	1
+9	kill_child	auth/mnet/auth.php/kill_child	auth	mnet	1
+10	available_courses	enrol/mnet/enrol.php/available_courses	enrol	mnet	1
+11	user_enrolments	enrol/mnet/enrol.php/user_enrolments	enrol	mnet	1
+12	enrol_user	enrol/mnet/enrol.php/enrol_user	enrol	mnet	1
+13	unenrol_user	enrol/mnet/enrol.php/unenrol_user	enrol	mnet	1
+14	course_enrolments	enrol/mnet/enrol.php/course_enrolments	enrol	mnet	1
+15	send_content_intent	portfolio/mahara/lib.php/send_content_intent	portfolio	mahara	1
+16	send_content_ready	portfolio/mahara/lib.php/send_content_ready	portfolio	mahara	1

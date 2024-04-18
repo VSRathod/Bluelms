@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_feedback` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `course` bigint(10) NOT NULL DEFAULT 0,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `intro` longtext NOT NULL,
+  `introformat` smallint(4) NOT NULL DEFAULT 0,
+  `anonymous` tinyint(1) NOT NULL DEFAULT 1,
+  `email_notification` tinyint(1) NOT NULL DEFAULT 1,
+  `multiple_submit` tinyint(1) NOT NULL DEFAULT 1,
+  `autonumbering` tinyint(1) NOT NULL DEFAULT 1,
+  `site_after_submit` varchar(255) NOT NULL DEFAULT '',
+  `page_after_submit` longtext NOT NULL,
+  `page_after_submitformat` tinyint(2) NOT NULL DEFAULT 0,
+  `publish_stats` tinyint(1) NOT NULL DEFAULT 0,
+  `timeopen` bigint(10) NOT NULL DEFAULT 0,
+  `timeclose` bigint(10) NOT NULL DEFAULT 0,
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `completionsubmit` tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `mdl_feed_cou_ix` (`course`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='all feedbacks'

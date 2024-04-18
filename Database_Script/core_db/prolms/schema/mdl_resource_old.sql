@@ -1,0 +1,21 @@
+CREATE TABLE `mdl_resource_old` (
+  `id` bigint(10) NOT NULL AUTO_INCREMENT,
+  `course` bigint(10) NOT NULL DEFAULT 0,
+  `name` varchar(255) NOT NULL DEFAULT '',
+  `type` varchar(30) NOT NULL DEFAULT '',
+  `reference` varchar(255) NOT NULL DEFAULT '',
+  `intro` longtext DEFAULT NULL,
+  `introformat` smallint(4) NOT NULL DEFAULT 0,
+  `alltext` longtext NOT NULL,
+  `popup` longtext NOT NULL,
+  `options` varchar(255) NOT NULL DEFAULT '',
+  `timemodified` bigint(10) NOT NULL DEFAULT 0,
+  `oldid` bigint(10) NOT NULL,
+  `cmid` bigint(10) DEFAULT NULL,
+  `newmodule` varchar(50) DEFAULT NULL,
+  `newid` bigint(10) DEFAULT NULL,
+  `migrated` bigint(10) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `mdl_resoold_old_uix` (`oldid`),
+  KEY `mdl_resoold_cmi_ix` (`cmid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci ROW_FORMAT=COMPRESSED COMMENT='backup of all old resource instances from 1.9'
